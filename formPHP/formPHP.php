@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="email" id="email" name="email" placeholder="exemple@mail.com" value="<?= $data['email'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="tel">Téléphonie :</label>
+                    <label for="tel">Téléphone :</label>
                     <input type="tel" id="tel" name="tel" placeholder="01 02 03 04 06" value="<?= $data['tel'] ?? '' ?>" required>
                 </div>
                 <div>

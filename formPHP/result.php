@@ -18,7 +18,7 @@
                 echo "Nom : " . $_POST['firstname'] . "<br />";
                 echo "Prénom : " . $_POST['lastname'] . "<br />";
                 echo "E-mail : " . $_POST['email'] . "<br />";
-                echo "Téléphonie : " . $_POST['tel'] . "<br />";
+                echo "Téléphone : " . $_POST['tel'] . "<br />";
                 echo "Sujet : " . $_POST['subject'] . "<br />";
                 echo "Message : " . $_POST['message'] . "<br />";
             ?>

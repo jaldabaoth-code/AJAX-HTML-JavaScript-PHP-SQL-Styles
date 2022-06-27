@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } else {
         /* If there not any upload image, display default image */
-        $fileDestination = "homer.jpg";
+        $fileDestination = "uploads/homer.jpg";
     }
     /* Show license if there are no errors in the form */
     if (empty($errors)) {
@@ -130,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php
                     if(!empty($failed)) {
                         print_r($failed);
-                        $fileDestination = "homer.jpg";
+                        $fileDestination = "uploads/homer.jpg";
                     }
                 ?>
                 <div>
