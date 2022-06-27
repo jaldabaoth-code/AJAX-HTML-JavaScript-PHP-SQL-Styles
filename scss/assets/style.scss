@@ -1,0 +1,56 @@
+$orange: #ff6a02;
+$white: #EDEDED;
+$yellow: #fdcc09;
+$dark: #3e3e3e;
+
+@mixin ring ($size, $color) {
+  border-radius : 50%;
+  border : (2px  + 2px * $size solid $color);
+  padding : (15px + 10px * $size);
+  margin : 10px;
+}
+
+.navbar.navbar-expand-lg {
+    background-color: $orange;
+    .navbar-brand {
+        color: $white;
+        font-size: 50px;
+    }
+    
+    .nav-link {
+        color: $white;
+        font-size: 30px;
+        &:hover {
+            color: $white;
+            text-decoration: underline $white;
+        }
+    }
+}
+
+.orange-ring {
+    @include ring(1.5, $orange);
+}
+
+.yellow-ring {
+    @include ring(8, $yellow);
+}
+
+footer {
+    background-color: $orange;
+}
+
+.footer-text {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+@for $i from 1 through 6 {
+    .ring>div:nth-child(#{$i}) {
+        @include ring($i*0.5, $dark);
+        margin-left : -10px * $i;
+    }
+}

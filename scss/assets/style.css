@@ -1,0 +1,94 @@
+.navbar.navbar-expand-lg {
+    background-color: #ff6a02;
+}
+
+.navbar.navbar-expand-lg .navbar-brand {
+    color: #EDEDED;
+    font-size: 50px;
+}
+
+.navbar.navbar-expand-lg .nav-link {
+    color: #EDEDED;
+    font-size: 30px;
+}
+
+.navbar.navbar-expand-lg .nav-link:hover {
+    color: #EDEDED;
+    text-decoration: underline #EDEDED;
+}
+
+.orange-ring {
+    border-radius: 50%;
+    border: 5px solid #ff6a02;
+    padding: 30px;
+    margin: 10px;
+}
+
+.yellow-ring {
+    border-radius: 50%;
+    border: 18px solid #fdcc09;
+    padding: 95px;
+    margin: 10px;
+}
+
+footer {
+  background-color: #ff6a02;
+}
+
+.footer-text {
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+.ring > div:nth-child(1) {
+    border-radius: 50%;
+    border: 3px solid #3e3e3e;
+    padding: 20px;
+    margin: 10px;
+    margin-left: -10px;
+}
+
+.ring > div:nth-child(2) {
+    border-radius: 50%;
+    border: 4px solid #3e3e3e;
+    padding: 25px;
+    margin: 10px;
+    margin-left: -20px;
+}
+
+.ring > div:nth-child(3) {
+  border-radius: 50%;
+  border: 5px solid #3e3e3e;
+  padding: 30px;
+  margin: 10px;
+  margin-left: -30px;
+}
+
+.ring > div:nth-child(4) {
+    border-radius: 50%;
+    border: 6px solid #3e3e3e;
+    padding: 35px;
+    margin: 10px;
+    margin-left: -40px;
+}
+
+.ring > div:nth-child(5) {
+  border-radius: 50%;
+  border: 7px solid #3e3e3e;
+  padding: 40px;
+  margin: 10px;
+  margin-left: -50px;
+}
+
+.ring > div:nth-child(6) {
+    border-radius: 50%;
+    border: 8px solid #3e3e3e;
+    padding: 45px;
+    margin: 10px;
+    margin-left: -60px;
+}
