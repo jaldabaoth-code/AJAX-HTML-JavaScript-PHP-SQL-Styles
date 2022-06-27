@@ -16,7 +16,7 @@
         <h1>Les Mini Projets PHP</h1>
         <hr>
         <h2>Les quêtes, les ateliers et les cours de PHP</h2>
-        <a href="https://github.com/jaldabaoth-code/PHP">Le lien vers (GitHub)</a>
+        <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS">Le lien vers (GitHub)</a>
         <br>
         <a href="https://odyssey.wildcodeschool.com/">Le lien vers (Odyssey - Wildcodeschool)</a>
     </body>
