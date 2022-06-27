@@ -29,7 +29,7 @@
                     <input type="email" id="email" name="email">
                 </div>
                 <div>
-                    <label for="tel">Téléphonie :</label>
+                    <label for="tel">Téléphone :</label>
                     <input type="tel" id="tel" name="tel">
                 </div>
                 <div>
