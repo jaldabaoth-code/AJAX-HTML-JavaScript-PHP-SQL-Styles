@@ -1,9 +1,5 @@
 <?php
 
-require "include/head.php";
-require "connected.php";
-require "include/data/products.php";
-
 if (!empty($_GET['add_to_cart'])) {
     switch ($_GET["add_to_cart"]) {
         case "46":
@@ -44,6 +40,9 @@ if (!empty($_GET['add_to_cart'])) {
             break;
     }
 }
+require "include/head.php";
+require "connected.php";
+require "include/data/products.php";
 ?>
 <section class="cookies container-fluid">
     <div class="row">

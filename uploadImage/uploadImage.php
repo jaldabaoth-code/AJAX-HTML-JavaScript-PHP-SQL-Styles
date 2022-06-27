@@ -80,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             $failed[$position] = "[{$fileName}] failed to upload.";
                         }
                     } else {
+                        $positon = "";
                         $failed[$positon] = "[{$fileName}] is too large.";
                     }
                 } else {
