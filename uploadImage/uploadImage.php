@@ -57,24 +57,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'Must not contain more than ' . $hairLength . ' character';
     }
     /* Uploaded image */
-    if(!empty($_FILES['files']['name'][0])) {
+    if (!empty($_FILES['files']['name'][0])) {
         $files = $_FILES['files'];
         $uploaded = array();
         $failed = array();
         $allowed = array('jpg', 'png', 'webp', 'gif');
-        foreach($files['name'] as $position => $fileName) {
+        foreach ($files['name'] as $position => $fileName) {
             $fileTemp = $files['tmp_name'][$position];
             $fileSize = $files['size'][$position];
             $fileError = $files['error'][$position];
             $fileExt = explode('.', $fileName);
             $fileExt = strtolower(end($fileExt));
-            if(in_array($fileExt,  $allowed)) {
-                if($fileError === 0) {
-                    if($fileSize <= 1000000) {
+            if (in_array($fileExt,  $allowed)) {
+                if ($fileError === 0) {
+                    if ($fileSize <= 1000000) {
                         $fileNameNew = uniqid('', true) . '.' . $fileExt;
                         $fileDestination = 'uploads/' . $fileNameNew;
-                        if(move_uploaded_file($fileTemp, $fileDestination)) {
-                            // the image has been copied to the uploads folder, the new name is on variable : $fileNameNew
+                        if (move_uploaded_file($fileTemp, $fileDestination)) {
+                            // The image has been copied to the uploads folder, the new name is on variable : $fileNameNew
                             $uploaded[$position] = $fileDestination;
                         } else {
                             $failed[$position] = "[{$fileName}] failed to upload.";
@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php endif; ?>
                 <!-- Show error when file extension is not allowed -->
                 <?php
-                    if(!empty($failed)) {
+                    if (!empty($failed)) {
                         print_r($failed);
                         $fileDestination = "uploads/homer.jpg";
                     }

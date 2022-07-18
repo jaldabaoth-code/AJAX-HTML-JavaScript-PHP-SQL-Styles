@@ -44,7 +44,7 @@ class Vehicle
 
     public function setCurrentSpeed(int $currentSpeed): void
     {
-        if($currentSpeed >= 0) {
+        if ($currentSpeed >= 0) {
             $this->currentSpeed = $currentSpeed;
         }
     }
