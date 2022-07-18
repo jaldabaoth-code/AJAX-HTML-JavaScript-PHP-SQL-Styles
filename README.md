@@ -14,7 +14,7 @@
     Don't delete the <b>.env.php.model</b> file, it must be kept
 3. Import the last version of the <b>dataVx.sql</b> file (at the root of the project) in your SQL server
 4. Run the internal PHP webserver with `php -S localhost:8000`
-5. Go to <b>>localhost:8000</b> with your favorite browser
+5. Go to <b>localhost:8000</b> with your favorite browser
 
 ---
 
@@ -37,6 +37,6 @@
 8. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/uploadImage">Upload Image</a>
 
 9. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/scss">SCSS</a>
-    - The file <b>style.css</b> in the assets folder, is the file conversion of <b>style.scss</b> (The conversion was done on a website)
+    - The file <b>style.css</b> in the asset folder, is the file conversion of <b>style.scss</b> (The conversion was done on a website)
 
 10. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/ajax">Ajax</a>
