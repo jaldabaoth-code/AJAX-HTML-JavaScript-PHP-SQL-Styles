@@ -5,7 +5,7 @@
             /* head included */
             include '../includes/head.html';
         ?>
-        <title>POO</title>
+        <title>OOP</title>
     </head>
     <?php
         /* navbar included */
@@ -17,7 +17,7 @@
             require_once 'ways/HighWay.php';
             require_once 'speedometer/Speedometer.php';
 
-            echo '<h2> POO </h2>';
+            echo '<h2>OOP</h2>';
 
             /* Moving Car */
             $car = new Car('vert', 4, 'électrique');

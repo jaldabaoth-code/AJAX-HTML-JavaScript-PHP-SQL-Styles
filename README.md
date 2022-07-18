@@ -6,12 +6,15 @@
 ---
 
 ### Steps
-0. Move into the directory and create an <b>.env.php</b> file from <b>.env.php.model</b> file and add your DB parameters<br/>
+
+0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/PHP-HTML-SCSS-CSS-JS.git`
+1. Enter the directory : `cd PHP-HTML-SCSS-CSS-JS`
+2. Create an <b>.env.php</b> file from <b>.env.php.model</b> file and add your DB parameters<br/>
     This one is not committed to the shared repository<br/>
     Don't delete the <b>.env.php.model</b> file, it must be kept
-0. Import the last version of the <b>dataVx.sql</b> file (at the root of the project) in your SQL server
-0. Run the internal PHP webserver with `php -S localhost:8000`
-0. Go to `localhost:8000` with your favorite browser
+3. Import the last version of the <b>dataVx.sql</b> file (at the root of the project) in your SQL server
+4. Run the internal PHP webserver with `php -S localhost:8000`
+5. Go to <b>>localhost:8000</b> with your favorite browser
 
 ---
 
@@ -23,7 +26,7 @@
 
 3. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/formPDO">Formulaire PDO</a>
 
-4. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/poo">POO</a>
+4. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/oop">OOP</a>
 
 5. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/date">Date</a>
 
