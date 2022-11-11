@@ -5,6 +5,7 @@
             /* head included */
             include '../includes/head.html';
         ?>
+        <link rel="stylesheet" href="../assets/styles/formStyle.css">
         <title>Ajax quest challenge</title>
     </head>
     <?php
@@ -16,7 +17,7 @@
         <section class="section">
             <div class="container">
                 <div class="content" id="simpson"></div>
-                <button class="btn btn-primary mt-3">Suivant</button>
+                <button class="btn btn-primary mt-3">Next</button>
             </div>
         </section>
         <!-- We need to load axios first! -->

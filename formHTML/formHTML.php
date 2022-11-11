@@ -5,6 +5,7 @@
             /* head included */
             include '../includes/head.html';
         ?>
+        <link rel="stylesheet" href="../assets/styles/formStyle.css">
         <title>Formulaire HTML</title>
     </head>
     <?php

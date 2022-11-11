@@ -107,6 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             /* head included */
             include '../includes/head.html';
         ?>
+        <link rel="stylesheet" href="../assets/styles/formStyle.css">
         <title>Upload Image</title>
     </head>
     <?php
@@ -135,31 +136,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ?>
                 <div>
                     <label for="lastname">Nom :</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last name" value="<?= $data['lastname'] ?? '' ?>" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Nom" value="<?= $data['lastname'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="firstname">Prénom :</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="First name" value="<?= $data['firstname'] ?? '' ?>" required>
+                    <input type="text" id="firstname" name="firstname" placeholder="Prénom" value="<?= $data['firstname'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="street">Rue :</label>
-                    <input type="text"  id="street" name="street" placeholder="Street" value="<?= $data['street'] ?? '' ?>" required>
+                    <input type="text"  id="street" name="street" placeholder="Rue" value="<?= $data['street'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="city">Ville :</label>
-                    <input type="text"  id="city" name="city" placeholder="City" value="<?= $data['city'] ?? '' ?>" required>
+                    <input type="text"  id="city" name="city" placeholder="Ville" value="<?= $data['city'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="country">Pays :</label>
-                    <input type="text" id="country" name="country" placeholder="Country" value="<?= $data['country'] ?? '' ?>" required>
+                    <input type="text" id="country" name="country" placeholder="Pays" value="<?= $data['country'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="sex">Sexe :</label>
-                    <input type="text"  id="sex" name="sex" placeholder="Sex" value="<?= $data['sex'] ?? '' ?>" required>
+                    <input type="text"  id="sex" name="sex" placeholder="Sexe" value="<?= $data['sex'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="hair">Cheveu :</label>
-                    <input type="text" id="hair" name="hair" placeholder="Hair" value="<?= $data['hair'] ?? '' ?>" required>
+                    <input type="text" id="hair" name="hair" placeholder="Cheveu" value="<?= $data['hair'] ?? '' ?>" required>
                 </div>
                 <div>
                     <label for="imageUpload">Télécharger une image de profil : </label>    

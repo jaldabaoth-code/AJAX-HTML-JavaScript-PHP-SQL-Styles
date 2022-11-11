@@ -6,6 +6,7 @@
             include '../includes/head.html';
         ?>
         <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="../assets/styles/formStyle.css">
         <title>SCSS</title>
     </head>
     <?php

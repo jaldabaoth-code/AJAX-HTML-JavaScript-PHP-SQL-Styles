@@ -40,3 +40,5 @@
     - The file <b>style.css</b> in the asset folder, is the file conversion of <b>style.scss</b> (The conversion was done on a website)
 
 10. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/ajax">Ajax</a>
+
+11. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/workshopPHP">Workshop PHP</a>

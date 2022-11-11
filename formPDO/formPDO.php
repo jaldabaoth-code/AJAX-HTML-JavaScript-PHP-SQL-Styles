@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             /* head included */
             include '../includes/head.html';
         ?>
+        <link rel="stylesheet" href="../assets/styles/formStyle.css">
         <title>Formulaire PDO</title>
     </head>
     <?php
