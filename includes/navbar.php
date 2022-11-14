@@ -17,4 +17,8 @@ $pageName=explode('/', $uri)[1];
     <a class="<?= ($pageName=='scss') ? 'active' : '' ?>" href="../scss/scss.php">SCSS</a>
     <a class="<?= ($pageName=='ajax') ? 'active' : '' ?>" href="../ajax/ajax.php">Ajax</a>
     <a class="<?= ($pageName=='workshopPHP') ? 'active' : '' ?>" href="../workshopPHP/workshopPHP.php">Workshop PHP</a>
+    <a class="<?= ($pageName=='calculatorJS') ? 'active' : '' ?>" href="../calculatorJS/calculatorJS.php">Calculator JS</a>
+    <a class="<?= ($pageName=='guessNumberJS') ? 'active' : '' ?>" href="../guessNumberJS/guessNumberJS.php">Guess A Number JS</a>
+    <a class="<?= ($pageName=='createElementJS') ? 'active' : '' ?>" href="../createElementJS/createElementJS.php">Create Element JS</a>
+    <a class="<?= ($pageName=='css') ? 'active' : '' ?>" href="../css/css.php">CSS</a>
 </div>

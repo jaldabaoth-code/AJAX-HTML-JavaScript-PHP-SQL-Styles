@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #15154d;
+    --light: #f6f6fa;
+    --dark: #010105;
+    --spacing: 8px;
+}
+
+body {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+header, footer {
+   background-color: var(--primary-color); 
+   padding: var(--spacing);
+}
+
+a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--primary-color); 
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.full-width {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cards {
+    --container-width: 100vw;
+    --columns: 5;
+    width: var(--container-width);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards > figure {
+    width: calc(var(--container-width) / var(--columns) - var(--spacing));
+}
+
+figure img {
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .cards {
+        --columns:1;
+    }
+}

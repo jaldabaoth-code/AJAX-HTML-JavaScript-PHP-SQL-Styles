@@ -42,3 +42,11 @@
 10. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/ajax">Ajax</a>
 
 11. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/workshopPHP">Workshop PHP</a>
+
+12. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/calculatorJS">Calculator JS</a>
+
+13. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/guessNumberJS">Guess A Number JS</a>
+
+14. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/createElementJS">Create Element JS</a>
+
+15. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/css">CSS</a>
