@@ -1,0 +1,86 @@
+:root {
+    --size: 50px;
+    --hue: 30;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin-top: 50px;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, var(--size));
+    grid-template-rows: repeat(8, var(--size));
+    counter-set: columns 1;
+    counter-set: rows 9;
+    transform: rotateX(var(--chessboard-inclination, 0deg)) rotateZ(var(--chessboard-rotation, 0deg));
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.chessboard div {
+    --main-color: hsl(var(--hue), 50%, calc(var(--lightness, 50%) + var(--lightness-modifier, 0%)));
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    counter-increment: columns;
+    font-size: 50px;
+    transform-style: preserve-3d;
+}
+
+.chessboard div::before {
+    transform: rotateZ(calc(var(--chessboard-rotation, 0deg) * -1)) rotateX(var(--chessboard-piece-inclination, 0deg)) translateY(var(--translation-piece, 0px)); 
+    transition: 1s ease-in-out;
+    content: attr(data-piece);
+}
+
+.chessboard div:hover::after {
+    content: counter(columns, upper-alpha) counter(rows);
+    font-size: 30px;
+    position: absolute;
+    transform: rotateZ(calc(var(--chessboard-rotation, 0deg) * -1)); 
+}
+
+.chessboard div:nth-child(8n+1) {
+    counter-reset: columns 1;
+    counter-increment: rows -1;
+}
+
+.chessboard div:is(:nth-child(16n), 
+:nth-child(16n-2),:nth-child(16n-4),
+:nth-child(16n-6),:nth-child(16n-9),
+:nth-child(16n-11),:nth-child(16n-13),:nth-child(16n-15)
+) {
+    --lightness: 10%;
+}
+
+.chessboard div:hover {
+    --lightness-modifier: 10%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+
+#rotate:checked ~ .chessboard {
+    --chessboard-rotation: 180deg;    
+}
+
+#threed:checked ~ .chessboard {
+    --chessboard-inclination: 70deg;    
+    --chessboard-piece-inclination: -90deg;   
+    --translation-piece: calc(var(--size) / -2); 
+}
+
+.chessButton {
+    margin-right: 20px;
+    font-size: 30px;
+}

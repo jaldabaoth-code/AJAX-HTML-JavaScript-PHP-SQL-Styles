@@ -50,3 +50,5 @@
 14. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/createElementJS">Create Element JS</a>
 
 15. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/css">CSS</a>
+
+16. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/chessCSS">Chess CSS</a>
