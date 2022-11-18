@@ -23,4 +23,6 @@ $pageName=explode('/', $uri)[1];
     <a class="<?= ($pageName=='css') ? 'active' : '' ?>" href="../css/css.php">CSS</a>
     <a class="<?= ($pageName=='chessCSS') ? 'active' : '' ?>" href="../chessCSS/chessCSS.php">Chess CSS</a>
     <a class="<?= ($pageName=='workshopWizardPHP') ? 'active' : '' ?>" href="../workshopWizardPHP/workshopWizardPHP.php">Workshop Wizard PHP</a>
+    <a class="<?= ($pageName=='xdebug') ? 'active' : '' ?>" href="../xdebug/xdebug.php">Xdebug</a>
+    <a class="<?= ($pageName=='conditional') ? 'active' : '' ?>" href="../conditional/conditional.php">Conditional</a>
 </div>

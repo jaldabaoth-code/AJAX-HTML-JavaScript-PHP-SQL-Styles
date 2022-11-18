@@ -1,2 +1,2 @@
 <?php
-    echo "I love PHP \n <br/>";
+    echo "I love PHP <br/>";

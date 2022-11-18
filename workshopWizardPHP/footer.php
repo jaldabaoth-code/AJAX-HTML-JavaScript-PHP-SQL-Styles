@@ -1,2 +1,2 @@
 <?php
-    echo "and Lord of the rings ! \n <br/>";
+    echo "and Lord of the rings ! <br/>";

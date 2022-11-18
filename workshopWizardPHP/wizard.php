@@ -1,4 +1,4 @@
 <?php
-    echo "Hello \n <br/>";
+    echo "Hello <br/>";
     echo $wizard;
     

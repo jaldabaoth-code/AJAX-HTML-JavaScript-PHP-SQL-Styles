@@ -19,31 +19,31 @@
             include("header.php");
 
             /* EXO1 - Démarrage */
-            echo "Hello fellowship \n <br/>";
+            echo "Hello fellowship <br/>";
 
             /* EXO2 - Variables */
             $ringBearer = "Sauron";
             $ringMaker = "Sauron";
             $numberOfCompanyMembers = "8";
             $ringiSOnTheFinger = true;
-            echo "The ring bearer's name : " . $ringBearer . "\n <br/>";
-            echo "The name of the creator of the ring : " . $ringMaker . "\n <br/>";
-            echo "The number of company members : " . $numberOfCompanyMembers . "\n <br/>";
-            echo "If the ring is on the finger or not : " . $ringiSOnTheFinger . "\n <br/>";
+            echo "The ring bearer's name : " . $ringBearer . "<br/>";
+            echo "The name of the creator of the ring : " . $ringMaker . "<br/>";
+            echo "The number of company members : " . $numberOfCompanyMembers . "<br/>";
+            echo "If the ring is on the finger or not : " . $ringiSOnTheFinger . "<br/>";
             $ringBearer = "Frodon";
-            echo "The ring bearer's name 2 : " . $ringBearer . "\n <br/>";
+            echo "The ring bearer's name 2 : " . $ringBearer . "<br/>";
             $numberOfCompanyMembers = $numberOfCompanyMembers + 1;
-            echo "1 number of additional company members : " . $numberOfCompanyMembers . "\n <br/>";
+            echo "1 number of additional company members : " . $numberOfCompanyMembers . "<br/>";
             $middleEarth = "";
             echo $middleEarth;
 
             /* EXO3 - Strings */
-            echo "The wearer is " . $ringBearer . "\n <br/>";
+            echo "The wearer is " . $ringBearer . "<br/>";
             $phrase = "The wearer is " . $ringBearer;
-            echo $phrase . " and ". $ringMaker . " is looking for him \n <br/>";
-            echo strtoupper($ringMaker) . "\n <br/>";
+            echo $phrase . " and ". $ringMaker . " is looking for him <br/>";
+            echo strtoupper($ringMaker) . "<br/>";
             $ringMaker = strtoupper($ringMaker);
-            echo strtoupper($ringMaker) . "\n <br/>";
+            echo strtoupper($ringMaker) . "<br/>";
 
             /* EXO4 - Include/require */
             include("footer.php");
@@ -52,4 +52,3 @@
         ?>
     </body>
 </html>
-    
