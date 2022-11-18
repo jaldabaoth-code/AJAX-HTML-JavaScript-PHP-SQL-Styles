@@ -58,3 +58,7 @@
 18. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/xdebug">Xdebug</a>
 
 19. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/conditionalPHP">Conditional PHP</a>
+
+20. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/arrayPHP">Array PHP</a>
+
+21. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/workshopFunctionPHP">Workshop Function PHP</a>
