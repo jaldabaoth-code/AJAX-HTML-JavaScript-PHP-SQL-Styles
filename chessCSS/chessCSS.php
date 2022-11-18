@@ -14,7 +14,7 @@
         include '../includes/navbar.php';
     ?>
     <body class="text-center">
-        <h1 class="">Chess CSS</h1>
+        <h1>Chess CSS</h1>
         <input type="checkbox" id="rotate">
         <label class="chessButton" for="rotate">Rotate</label>
         <input type="checkbox" id="threed">

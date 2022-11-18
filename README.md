@@ -52,3 +52,5 @@
 15. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/css">CSS</a>
 
 16. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/chessCSS">Chess CSS</a>
+
+17. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/workshopWizardPHP">Workshop Wizard PHP</a>
