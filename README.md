@@ -57,4 +57,4 @@
 
 18. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/xdebug">Xdebug</a>
 
-19. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/conditional">Conditional</a>
+19. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/conditionalPHP">Conditional PHP</a>
