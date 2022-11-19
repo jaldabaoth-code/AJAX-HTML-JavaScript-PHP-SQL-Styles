@@ -1,11 +1,9 @@
 <?php
-
     /* EX1 - FONCTION */
     function sayHello1()
     {
         echo "Hello NIte Owl";
     }
-
 
     /* EX2 - RETOUR */
     function sayHello2(): string
@@ -13,7 +11,6 @@
         $sayHello = "Hello NIte Owl";
         return $sayHello;
     }
-
 
     /* EX3 - PARAMETRE */
     function sayHello3(string $name): string
