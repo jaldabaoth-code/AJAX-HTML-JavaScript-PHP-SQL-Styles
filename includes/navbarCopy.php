@@ -6,8 +6,8 @@ $pageName=explode('/', $uri)[1];
 ?>
 <div class="topnav">
     <a class="<?= ($pageName=='index.php' || $uri=='/') ? 'active' : '' ?>" href="../">Accueil</a>
-    <a class="<?= ($pageName=='formPHP') ? 'active' : '' ?>" href="../formPHP/formPHP.php">Formulaire PHP</a>
-    <a class="<?= ($pageName=='formHTML') ? 'active' : '' ?>" href="../formHTML/formHTML.php">Formulaire HTML</a>
+    <a class="<?= ($pageName=='formPHP') ? 'active' : '' ?>" href="indexPHP.php">PHP</a>
+    <a class="<?= ($pageName=='formHTML') ? 'active' : '' ?>" href="indexHTML.php">HTML</a>
     <a class="<?= ($pageName=='formPDO') ? 'active' : '' ?>" href="../formPDO/formPDO.php">Formulaire PDO</a>
     <a class="<?= ($pageName=='uploadImage') ? 'active' : '' ?>" href="../uploadImage/uploadImage.php">Upload Image</a>
     <a class="<?= ($pageName=='oop') ? 'active' : '' ?>" href="../oop/oop.php">OOP</a>
