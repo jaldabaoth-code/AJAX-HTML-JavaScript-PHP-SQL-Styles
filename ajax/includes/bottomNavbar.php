@@ -1,8 +1,15 @@
 <!-- get current URI -->
 <?php
-    
-$pageName=explode('/', $uri)[2];
+
+    $pageName='';
+    if (isset(explode('/', $uri)[2])) {
+        $pageName=explode('/', $uri)[2];
+
+    }
 ?>
 <div class="bottomNav">
-    <a class="<?= ($pageName=='ajax') ? 'active' : '' ?>" href="../ajax/ajax/ajax.php">AJAX</a>
+    <a class="<?= ($pageName=='index.php' || $pageName=='') ? 'active' : '' ?>" href="../index.php">Home</a>
+    <a class="<?= ($pageName=='ajax') ? 'active' : '' ?>" href="../../ajax/ajax/ajax.php">
+        <img class="navImage" src="../../assets/images/quest.png"> AJAX Challenge
+    </a>
 </div>
