@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             /* head included */
             include '../includes/head.html';
         ?>
-        <link rel="stylesheet" href="../assets/styles/formStyle.css">
+        <link rel="stylesheet" href="../assets/styles/style.css">
         <title>Upload Image</title>
     </head>
     <?php

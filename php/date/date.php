@@ -15,7 +15,7 @@ $carburants = $diffMinutes / 10000;
             /* head included */
             include '../includes/head.html';
         ?>
-        <link rel="stylesheet" href="../assets/styles/formStyle.css">
+        <link rel="stylesheet" href="../assets/styles/style.css">
         <title>Date</title>
     </head>
     <?php

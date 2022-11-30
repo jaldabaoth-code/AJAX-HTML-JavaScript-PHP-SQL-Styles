@@ -5,7 +5,7 @@
             /* head included */
             include '../includes/head.html';
         ?>
-        <link rel="stylesheet" href="../assets/styles/formStyle.css">
+        <link rel="stylesheet" href="../assets/styles/style.css">
         <link rel="stylesheet" href="style.css">
         <title>Chess CSS</title>
     </head>
