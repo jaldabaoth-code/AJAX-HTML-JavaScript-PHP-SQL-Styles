@@ -8,7 +8,7 @@
 ?>
 <div class="bottomNav">
     <a class="<?= ($pageName == 'index.php' || $pageName == '') ? 'active' : '' ?>" href="../index.php">Home</a>
-    <a class="<?= ($pageName == 'challenge') ? 'active' : '' ?>" href="../../ajax/challenge/challenge.php">
-        <img class="navImage" src="../../assets/images/quest.png"> Challenge
+    <a class="<?= ($pageName == 'form') ? 'active' : '' ?>" href="../../html/form/form.php">
+        <img class="navImage" src="../../assets/images/quest.png"> Form
     </a>
 </div>

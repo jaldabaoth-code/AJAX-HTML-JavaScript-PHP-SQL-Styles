@@ -6,7 +6,7 @@
             include 'includes/head.html';
         ?>
         <link rel="stylesheet" href="../assets/styles/style.css">
-        <title>Accueil</title>
+        <title>Home</title>
     </head>
     <?php
         include 'includes/navbar.php';

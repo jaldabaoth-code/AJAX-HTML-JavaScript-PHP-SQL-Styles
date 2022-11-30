@@ -9,14 +9,22 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="../../assets/styles/navbar.css">
         <link rel="stylesheet" href="../../assets/styles/style.css">
-        <title>AJAX</title>
+        <title>AJAX Challenge</title>
     </head>
     <?php
         /* Navbar included */
-        include '../includes/navbar.php';
-        include 'includes/bottomNavbar.php';
+        include '../../includes/navbar.php';
+        include '../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>AJAX quests, workshops and lessons</h1>
+        <h1>AJAX Challenge - Quest</h1>
+        <h2>Simpson API</h2>
+        <div class="container">
+            <div class="content" id="simpson"></div>
+            <button class="btn btn-primary mt-3">Next</button>
+        </div>
+        <!-- We need to load axios first! -->
+        <script	src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs="	crossorigin="anonymous"	></script>
+        <script src="assets/script.js"></script>
     </body>
 </html>
