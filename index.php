@@ -9,10 +9,11 @@
         <title>Accueil</title>
     </head>
     <?php
-        /* navbar included */
         include 'includes/navbar.php';
+        /* navbar included */
+/*         include 'includes/navbar.php';
         include 'includes/navbarCopy.php';
-        include 'includes/navbarCopyCopy.php';
+        include 'includes/navbarCopyCopy.php'; */
     ?>
     <body>
         <!-- Les Projets PHP -->
