@@ -14,6 +14,9 @@
     <a class="<?= ($pageName == 'createElement') ? 'active' : '' ?>" href="../../javaScript/createElement/createElement.php">
         <img class="navImage" src="../../assets/images/quest.png"> Create Element
     </a>
+    <a class="<?= ($pageName == 'hoverMe') ? 'active' : '' ?>" href="../../javaScript/hoverMe/hoverMe.php">
+        <img class="navImage" src="../../assets/images/quest.png"> Hover Me
+    </a>
     <a class="<?= ($pageName == 'guessNumber') ? 'active' : '' ?>" href="../../javaScript/guessNumber/guessNumber.php">
         <img class="navImage" src="../../assets/images/quest.png"> Guess Number
     </a>

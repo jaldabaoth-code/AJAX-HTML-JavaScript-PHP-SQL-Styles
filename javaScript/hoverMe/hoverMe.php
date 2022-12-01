@@ -17,19 +17,9 @@
         include '../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1 class="mt-5">JavaScipt Create Element - Quest</h1>
-        <h2>Adopt A Cat!</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-img"></div>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Billy</h3>
-                    <button class="card-button">Adopt Now</button>
-                </div>
-            </div>
-        </div>
+        <h1>JavaScript Hover Me - Quest</h1>
+        <h2 class="title">Hover me</h2>
+        <img src="https://placedog.net/500" class="img-dogs displayed" alt="picture of dog" />
         <script src="assets/js/index.js"></script>
     </body>
 </html>
