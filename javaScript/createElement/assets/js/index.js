@@ -1,4 +1,3 @@
-/* Adopt A Cat! */
 const cards = document.querySelector(".cards");
 const animalsToAdopt = [
     {

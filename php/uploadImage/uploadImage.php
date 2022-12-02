@@ -103,20 +103,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php
-            /* head included */
-            include '../includes/head.html';
-        ?>
-        <link rel="stylesheet" href="../assets/styles/style.css">
-        <title>Upload Image</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="#">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../assets/styles/navbar.css">
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+        <title>PHP Upload Image</title>
     </head>
     <?php
-        /* navbar included */
-        include '../includes/navbar.php';
+        /* Navbar included */
+        include '../../includes/navbar.php';
+        include '../includes/bottomNavbar.php';
     ?>
     <body>
         <!-- Form -->
         <div class="form">
+            <h1>PHP Upload Image - Quest</h1>
             <h2>Upload Image</h2>
             <form action="uploadImage.php" method="POST" enctype="multipart/form-data" class="login" novalidate>
                 <!-- Show errors -->

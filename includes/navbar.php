@@ -2,14 +2,14 @@
 <?php
     
 $uri = $_SERVER['REQUEST_URI'];
-$pageName=explode('/', $uri)[1];
+$pageGroupeName = explode('/', $uri)[1];
 ?>
 <div class="topnav">
-    <a class="<?= ($pageName=='index.php' || $uri=='/') ? 'active' : '' ?>" href="../../">Home</a>
-    <a class="<?= ($pageName=='ajax') ? 'active' : '' ?>" href="../../ajax/index.php">AJAX</a>
-    <a class="<?= ($pageName=='html') ? 'active' : '' ?>" href="../../html/index.php">HTML</a>
-    <a class="<?= ($pageName=='js') ? 'active' : '' ?>" href="../../javaScript/index.php">JavaScript</a>
-    <a class="<?= ($pageName=='php') ? 'active' : '' ?>" href="../../php/index.php">PHP</a>
-    <a class="<?= ($pageName=='sql') ? 'active' : '' ?>" href="../../sql/index.php">SQL</a>
-    <a class="<?= ($pageName=='styles') ? 'active' : '' ?>" href="../../styles/index.php">Styles</a>
+    <a class="<?= ($pageGroupeName == 'index.php' || $uri=='/') ? 'active' : '' ?>" href="../../">Home</a>
+    <a class="<?= ($pageGroupeName == 'ajax') ? 'active' : '' ?>" href="../../ajax/index.php">AJAX</a>
+    <a class="<?= ($pageGroupeName == 'html') ? 'active' : '' ?>" href="../../html/index.php">HTML</a>
+    <a class="<?= ($pageGroupeName == 'js') ? 'active' : '' ?>" href="../../javaScript/index.php">JavaScript</a>
+    <a class="<?= ($pageGroupeName == 'php') ? 'active' : '' ?>" href="../../php/index.php">PHP</a>
+    <a class="<?= ($pageGroupeName == 'sql') ? 'active' : '' ?>" href="../../sql/index.php">SQL</a>
+    <a class="<?= ($pageGroupeName == 'styles') ? 'active' : '' ?>" href="../../styles/index.php">Styles</a>
 </div>

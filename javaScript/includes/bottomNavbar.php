@@ -18,6 +18,6 @@
         <img class="navImage" src="../../assets/images/quest.png"> Hover Me
     </a>
     <a class="<?= ($pageName == 'guessNumber') ? 'active' : '' ?>" href="../../javaScript/guessNumber/guessNumber.php">
-        <img class="navImage" src="../../assets/images/quest.png"> Guess Number
+        <img class="navImage" src="../../assets/images/quest.png"> Guess A Number
     </a>
 </div>

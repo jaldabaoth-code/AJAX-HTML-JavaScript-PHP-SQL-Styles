@@ -1,9 +1,9 @@
 <?php
 
-/* options in select */
+/* Options in select */
 $subjects = ['SUJET1' => 'SUJET1', 'SUJET2' => 'SUJET2', 'SUJET3' => 'SUJET3'];
 
-/* conditions for form constraints */
+/* Conditions for form constraints */
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = array_map('trim', $_POST);
     $errors = [];
@@ -44,19 +44,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php
-            /* head included */
-            include '../includes/head.html';
-        ?>
-        <link rel="stylesheet" href="../assets/styles/style.css">
-        <title>Formulaire PHP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="#">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../assets/styles/navbar.css">
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+        <title>PHP Form</title>
     </head>
     <?php
-        /* navbar included */
-        include '../includes/navbar.php';
+        /* Navbar included */
+        include '../../includes/navbar.php';
+        include '../includes/bottomNavbar.php';
     ?>
     <body>
-        <h2>FORMULAIRE PHP</h2>
+        <h1>PHP Form - Quest</h1>
+        <h2>Form</h2>
         <!-- PHP form -->
         <div class="form">
             <form action="result.php" method="POST" class="login" novalidate>

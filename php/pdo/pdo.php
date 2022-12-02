@@ -1,6 +1,6 @@
 <?php
 
-require_once '../.env.php';
+require_once '../../.env.php';
 
 $pdo = new \PDO(DSN, USER, PASS);
 
@@ -38,19 +38,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php
-            /* head included */
-            include '../includes/head.html';
-        ?>
-        <link rel="stylesheet" href="../assets/styles/style.css">
-        <title>Formulaire PDO</title>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="#">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../assets/styles/navbar.css">
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+        <title>PHP PDO</title>
     </head>
     <?php
-        /* navbar included */
-        include '../includes/navbar.php';
+        /* Navbar included */
+        include '../../includes/navbar.php';
+        include '../includes/bottomNavbar.php';
     ?>
     <body>
-        <h2>FORMULAIRE PDO</h2>
+        <h1>PHP PDO - Quest</h1>
+        <h2>PDO</h2>
         <!-- PDO form -->
         <div class="form">
             <form action="" method="POST" class="login" novalidate>
@@ -62,15 +67,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </ul>
                 <?php endif; ?>
                 <div>
-                    <label for="lastname">Nom :</label>
+                    <label for="lastname">Lastname :</label>
                     <input type="text" id="lastname" name="lastname" placeholder="Votre Nom" value="<?= $data['lastname'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="firstname">Prénom :</label>
+                    <label for="firstname">Firstname :</label>
                     <input type="text" id="firstname" name="firstname" placeholder="Votre Prenom" value="<?= $data['firstname'] ?? '' ?>" required>
                 </div>
                 <div class="button">
-                    <button type="submit" class="button">Envoyer votre message</button>
+                    <button type="submit" class="button">Send your message</button>
                 </div>
             </form>
         </div>

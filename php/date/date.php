@@ -11,24 +11,28 @@ $carburants = $diffMinutes / 10000;
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php
-            /* head included */
-            include '../includes/head.html';
-        ?>
-        <link rel="stylesheet" href="../assets/styles/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="#">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../assets/styles/navbar.css">
+        <link rel="stylesheet" href="../../assets/styles/style.css">
         <title>Date</title>
     </head>
     <?php
-        /* navbar included */
-        include '../includes/navbar.php';
+        /* Navbar included */
+        include '../../includes/navbar.php';
+        include '../includes/bottomNavbar.php';
     ?>
     <body>
-        <h2>Différence entre 2 dates</h2>
+        <h1>PHP Date - Quest</h1>
+        <h2>Difference between 2 dates</h2>
         <div class="container">
             <div class="row bg-secondary col-12 pt-1">
                 <div class="col-3">
                     <div class="col-12 bg-danger text-white text-center">
-                        MOIS
+                        MONTH
                     </div>
                     <div type="text" class="bg-dark text-warning form-control text-center mt-1">
                         <?= strtoupper($destinationTime->format('M')) ?>
@@ -36,7 +40,7 @@ $carburants = $diffMinutes / 10000;
                 </div>
                 <div class="col-2">
                     <div class="col-12 bg-danger text-white text-center">
-                        JOUR
+                        DAY
                     </div>
                     <div type="text" class="bg-dark text-warning form-control text-center mt-1">
                         <?= strtoupper($destinationTime->format('d')) ?>
@@ -44,7 +48,7 @@ $carburants = $diffMinutes / 10000;
                 </div>
                 <div class="col-3">
                     <div class="col-12 bg-danger text-white text-center">
-                        ANNEE
+                        YEAR
                     </div>
                     <div type="text" class="bg-dark text-warning form-control text-center mt-1">
                         <?= strtoupper($destinationTime->format('Y')) ?>
@@ -52,7 +56,7 @@ $carburants = $diffMinutes / 10000;
                 </div>
                 <div class="col-2">
                     <div class="col-12 bg-danger text-white text-center">
-                        HEURE
+                        HOUR
                     </div>
                     <div type="text" class="bg-dark text-warning form-control text-center mt-1">
                         <?= strtoupper($destinationTime->format('H')) ?>
@@ -76,7 +80,7 @@ $carburants = $diffMinutes / 10000;
             <div class="row bg-secondary col-12 pt-1">
                 <div class="col-3">
                     <div class="col-12 bg-danger text-white text-center">
-                        MOIS
+                        MONTH
                     </div>
                     <div type="text" class="bg-dark text-success form-control text-center mt-1">
                         <?= strtoupper($presentTime->format('M')) ?>
@@ -84,7 +88,7 @@ $carburants = $diffMinutes / 10000;
                 </div>
                 <div class="col-2">
                     <div class="col-12 bg-danger text-white text-center">
-                        JOUR
+                        DAY
                     </div>
                     <div type="text" class="bg-dark text-success form-control text-center mt-1">
                         <?= strtoupper($presentTime->format('d')) ?>
@@ -92,7 +96,7 @@ $carburants = $diffMinutes / 10000;
                 </div>
                 <div class="col-3">
                     <div class="col-12 bg-danger text-white text-center">
-                        ANNEE
+                        YEAR
                     </div>
                     <div type="text" class="bg-dark text-success form-control text-center mt-1">
                         <?= strtoupper($presentTime->format('Y')) ?>
@@ -100,7 +104,7 @@ $carburants = $diffMinutes / 10000;
                 </div>
                 <div class="col-2">
                     <div class="col-12 bg-danger text-white text-center">
-                        HEURE
+                        HOUR
                     </div>
                     <div type="text" class="bg-dark text-success form-control text-center mt-1">
                         <?= strtoupper($presentTime->format('H')) ?>
@@ -122,10 +126,10 @@ $carburants = $diffMinutes / 10000;
             </div>
             <div class="row mt-5">
                 <div class="col-6 offset-3 text-center">
-                    Il y a <?= $diff->y ?> annnées, <?= $diff->m ?> mois, <?= $diff->d ?> jours, <?= $diff->h ?> heures, <?= $diff->i ?> minutes entre les deux dates.
+                    There are <?= $diff->y ?> years, <?= $diff->m ?> month, <?= $diff->d ?> days, <?= $diff->h ?> hours, <?= $diff->i ?> between the two dates.
                 </div>
                 <div class="col-6 offset-3 text-center">
-                    Il y a <?= $diffMinutes ?> minutes de difference, donc il faut <?= $carburants ?> litres de carburants.
+                    There are a difference of <?= $diffMinutes ?> minutes, so we need <?= $carburants ?> liters of fuel.
                 </div>
             </div>
         </div>

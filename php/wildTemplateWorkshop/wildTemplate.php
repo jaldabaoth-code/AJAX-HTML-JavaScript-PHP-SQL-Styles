@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php
-            /* head included */
-            include '../includes/head.html';
-        ?>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="#">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../assets/styles/navbar.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="../assets/styles/navbar.css">
         <title>Wild Template</title>
     </head>
     <?php
-        /* navbar included */
-        include '../includes/navbar.php';
+        /* Navbar included */
+        include '../../includes/navbar.php';
+        include '../includes/bottomNavbar.php';
     ?>
     <body>
         <?php include "_header.php"; ?>
