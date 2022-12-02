@@ -80,7 +80,7 @@ input[type="checkbox"]:checked + label {
     --translation-piece: calc(var(--size) / -2); 
 }
 
-.chessButton {
+.chess-button {
     margin-right: 20px;
     font-size: 30px;
 }

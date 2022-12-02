@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="#">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../assets/styles/navbar.css">
-        <link rel="stylesheet" href="../../assets/styles/style.css">
-        <link rel="stylesheet" href="assets/style.css">
-        <title>SCSS</title>
+        <?php
+            /* Head included */
+            include '../../includes/head.html';
+        ?>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <title>Styles SCSS</title>
     </head>
     <?php
         /* Navbar included */
@@ -17,29 +14,30 @@
         include '../includes/bottomNavbar.php';
     ?>
     <body>
+        <h1>Styles SCSS - Quest</h1>
         <h2>SCSS</h2>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">TrouverLePrécieux</a>
+            <a class="navbar-brand" href="#">FindThePrecious</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">CAMARADES</a>
+                        <a class="nav-link" href="#">COMRADES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">L'ANNEAU</a>
+                        <a class="nav-link" href="#">THE RING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">RÉCOMPENSE</a>
+                        <a class="nav-link" href="#">REWARD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CHASSEUR</a>
+                        <a class="nav-link" href="#">HUNTER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">REJOINDRE</a>
+                        <a class="nav-link" href="#">REJOIN</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACT</a>
@@ -50,12 +48,12 @@
         <!-- Rings -->
         <div class="d-flex flex-row justify-content-center align-items-center">
             <div class="orange-ring"></div>
-            <h3>MON PRÉCIEUX</h3>
+            <h3>MY PRECIOUS</h3>
             <div class="orange-ring"></div>
         </div>
         <div class="d-flex flex-row justify-content-center align-items-center">
             <div class="yellow-ring"></div>
-            <h3>LA BAGUE UNIQUE</h3>
+            <h3>THE UNIQUE RING</h3>
         </div>
         <div class="d-flex flex-row ring justify-content-center align-items-center">
             <div></div>
@@ -66,7 +64,7 @@
             <div></div>
         </div>
         <div class="d-flex flex-row ring justify-content-center">
-            <h3 class="row">VEUILLEZ LE TROUVER</h3>
+            <h3 class="row">PLEASE FIND IT</h3>
         </div>
         <!-- Footer -->
         <footer class="text-center text-lg-start">
@@ -75,26 +73,26 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#!" class="footer-text">À PROPOS DE NOUS</a>
+                                <a href="#!" class="footer-text">ABOUT US</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer-text">CAMARADES</a>
+                                <a href="#!" class="footer-text">COMRADES</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer-text">REJOIGNEZ NOTRE ARMÉE</a>
+                                <a href="#!" class="footer-text">JOIN OUR ARMY</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="footer-text">FAQ</a>
+                                <a href="#!" class="footer-text">FAQs</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer-text">CONDITIONS DE RÉCOMPENSE</a>
+                                <a href="#!" class="footer-text">REWARD CONDITIONS</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer-text">MENTIONS LEGALES</a>
+                                <a href="#!" class="footer-text">LEGAL NOTICE</a>
                             </li>
                         </ul>
                     </div>
@@ -104,10 +102,10 @@
                                 <a href="#!" class="footer-text">SAURON4EVER.COM</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer-text">RETROUVEZ-LE AUSSI SUR TWITTER</a>
+                                <a href="#!" class="footer-text">FIND IT ALSO ON TWITTER</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer-text">TROUVEZLEPRÉCIEUX</a>
+                                <a href="#!" class="footer-text">FINDTHEPRECIOUS</a>
                             </li>
                         </ul>
                     </div>
