@@ -3,14 +3,14 @@
     <head>
         <?php
             /* Head included */
-            include '../../includes/head.html';
+            include '../../../includes/head.html';
         ?>
         <title>JavaScipt Guess A Number</title>
     </head>
     <?php
         /* Navbar included */
-        include '../../includes/navbar.php';
-        include '../includes/bottomNavbar.php';
+        include '../../../includes/navbar.php';
+        include '../../includes/bottomNavbar.php';
     ?>
     <body>
         <h1>JavaScipt Guess A Number - Quest</h1>
