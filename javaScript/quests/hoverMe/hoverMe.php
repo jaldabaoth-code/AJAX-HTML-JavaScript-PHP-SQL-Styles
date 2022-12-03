@@ -15,7 +15,7 @@
     ?>
     <body>
         <h1>JavaScript Hover Me - Quest</h1>
-        <h2 class="title">Hover me</h2>
+        <h2 class="title">Hover Me</h2>
         <img src="https://placedog.net/500" class="img-dogs displayed" alt="picture of dog">
         <script src="assets/js/index.js"></script>
     </body>

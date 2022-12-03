@@ -1,4 +1,4 @@
-<!-- get current URI -->
+<!-- Get current URI -->
 <?php
     $pageName = '';
     if (isset(explode('/', $uri)[3])) {
