@@ -5,7 +5,8 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title>HTML Form</title>
+        <link rel="stylesheet" href="../assets/styles/style.css">
+        <title>PHP Form</title>
     </head>
     <?php
         /* Navbar included */
@@ -13,7 +14,7 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>HTML Form - Quest</h1>
+        <h1>PHP Form - Quest</h1>
         <h2>Form Results</h2>
         <p>
             <?php

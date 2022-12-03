@@ -24,8 +24,8 @@
                 <input type="text" id="firstname" name="firstname">
                 <label for="email">E-mail :</label>
                 <input type="email" id="email" name="email">
-                <label for="tel">Telephone :</label>
-                <input type="tel" id="tel" name="tel">
+                <label for="phone">Phone number :</label>
+                <input type="phone" id="phone" name="phone">
                 <label for="subject">Subject :</label>
                 <select id="subject" name="subject">
                     <option value="SUBJECT 1">SUBJECT 1</option>
