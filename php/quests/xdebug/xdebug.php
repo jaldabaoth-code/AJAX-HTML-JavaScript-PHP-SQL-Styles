@@ -14,7 +14,7 @@
     ?>
     <body>
         <h1>PHP Xdebug - Quest</h1>
-        <h1>Xdebug</h1>
+        <h2>Xdebug</h2>
         <?php
             var_dump(array('CodeIgniter', 'php', 'phpMyAdmin', 'lucidar.me'));
         ?>

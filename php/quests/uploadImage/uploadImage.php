@@ -173,7 +173,7 @@
         <?php if ($showLicence) : ?>
             <div class="container my-5 p-0 justify-content-center">
                 <div class="row m-0 p-0">
-                    <div class="col-12  m-0 p-2 bg-warning">
+                    <div class="col-12 m-0 p-2 bg-warning">
                         <img src="">
                     </div>
                 </div>
