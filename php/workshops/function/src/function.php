@@ -25,10 +25,10 @@
         foreach($watchmen as $watchmenName)
         {
             if ($name == $watchmenName) {
-                $message = $name . " est un watchmen";
+                $message = $name . " is a watchmen";
                 return $message;            
             } else {
-                $message = $name . " est un intrus";
+                $message = $name . " is an intruder";
             }
         }
         return $message; 

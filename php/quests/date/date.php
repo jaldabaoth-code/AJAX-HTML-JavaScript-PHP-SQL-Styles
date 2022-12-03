@@ -1,12 +1,11 @@
 <?php
-
-$presentTime = new DateTime('', new DateTimeZone('Europe/Paris'));
-$destinationTime  = new DateTime('1990-05-01 00:00', new DateTimeZone('Europe/Paris'));
-$diff = $presentTime->diff($destinationTime);
-$presentTimeMinutes = strtotime($presentTime->format('Y-m-d-H-m'));
-$destinationTimeMinutes  = strtotime($destinationTime->format('Y-m-d-H-m'));
-$diffMinutes = ($presentTimeMinutes - $destinationTimeMinutes) / 60;
-$carburants = $diffMinutes / 10000;
+    $presentTime = new DateTime('', new DateTimeZone('Europe/Paris'));
+    $destinationTime  = new DateTime('1990-05-01 00:00', new DateTimeZone('Europe/Paris'));
+    $diff = $presentTime->diff($destinationTime);
+    $presentTimeMinutes = strtotime($presentTime->format('Y-m-d-H-m'));
+    $destinationTimeMinutes  = strtotime($destinationTime->format('Y-m-d-H-m'));
+    $diffMinutes = ($presentTimeMinutes - $destinationTimeMinutes) / 60;
+    $fuels = $diffMinutes / 10000;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -126,7 +125,7 @@ $carburants = $diffMinutes / 10000;
                     There are <?= $diff->y ?> years, <?= $diff->m ?> month, <?= $diff->d ?> days, <?= $diff->h ?> hours, <?= $diff->i ?> between the two dates.
                 </div>
                 <div class="col-6 offset-3 text-center">
-                    There are a difference of <?= $diffMinutes ?> minutes, so we need <?= $carburants ?> liters of fuel.
+                    There are a difference of <?= $diffMinutes ?> minutes, so we need <?= $fuels ?> liters of fuel.
                 </div>
             </div>
         </div>

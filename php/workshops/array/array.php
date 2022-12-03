@@ -75,8 +75,8 @@
             $jedis = ["Obi-Wan Kenobi", "Yoda", "Luke Skywalker", "Windu", "Qui-gon Jinn"];
             $jedis[] = "Rey";
             echo $jedis[1] . " ";
-            foreach ($jedis as $namejedi) {
-                echo $namejedi;
+            foreach ($jedis as $jediName) {
+                echo $jediName;
             }
         ?>
         <br/>
