@@ -1,122 +1,115 @@
 <?php
-
-$showLicence = false;
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $data = array_map('trim', $_POST);
-    $errors = [];
-
-    /* Error management */
-    if (empty($data['lastname'])) {
-        $errors[] = 'Lastname must not be empty';
-    }
-    $lastnameLength = 255;
-    if (strlen($data['lastname']) > $lastnameLength) {
-        $errors[] = 'Must not contain more than ' . $lastnameLength . '  character';
-    }
-    if (empty($data['firstname'])) {
-        $errors[] = 'Firstname must not be empty';
-    }
-    $firstnameLength = 255;
-    if (strlen($data['firstname']) > $firstnameLength) {
-        $errors[] = 'Must not contain more than ' . $firstnameLength . ' character';
-    }
-    if (empty($data['street'])) {
-        $errors[] = 'Street must not be empty';
-    }
-    $streetLength = 255;
-    if (strlen($data['street']) > $streetLength) {
-        $errors[] = 'Must not contain more than ' . $streetLength . ' character';
-    }
-    if (empty($data['city'])) {
-        $errors[] = 'City must not be empty';
-    }
-    $cityLength = 255;
-    if (strlen($data['city']) > $cityLength) {
-        $errors[] = 'Must not contain more than ' . $cityLength . ' character';
-    }
-    if (empty($data['country'])) {
-        $errors[] = 'Country must not be empty';
-    }
-    $countryLength = 255;
-    if (strlen($data['country']) > $countryLength) {
-        $errors[] = 'Must not contain more than ' . $countryLength . ' character';
-    }
-    if (empty($data['sex'])) {
-        $errors[] = 'Sex must not be empty';
-    }
-    $sexLength = 255;
-    if (strlen($data['sex']) > $sexLength) {
-        $errors[] = 'Must not contain more than ' . $sexLength . ' character';
-    }
-    if (empty($data['hair'])) {
-        $errors[] = 'Hair must not be empty';
-    }
-    $hairLength = 255;
-    if (strlen($data['hair']) > $hairLength) {
-        $errors[] = 'Must not contain more than ' . $hairLength . ' character';
-    }
-    /* Uploaded image */
-    if (!empty($_FILES['files']['name'][0])) {
-        $files = $_FILES['files'];
-        $uploaded = array();
-        $failed = array();
-        $allowed = array('jpg', 'png', 'webp', 'gif');
-        foreach ($files['name'] as $position => $fileName) {
-            $fileTemp = $files['tmp_name'][$position];
-            $fileSize = $files['size'][$position];
-            $fileError = $files['error'][$position];
-            $fileExt = explode('.', $fileName);
-            $fileExt = strtolower(end($fileExt));
-            if (in_array($fileExt,  $allowed)) {
-                if ($fileError === 0) {
-                    if ($fileSize <= 1000000) {
-                        $fileNameNew = uniqid('', true) . '.' . $fileExt;
-                        $fileDestination = 'uploads/' . $fileNameNew;
-                        if (move_uploaded_file($fileTemp, $fileDestination)) {
-                            // The image has been copied to the uploads folder, the new name is on variable : $fileNameNew
-                            $uploaded[$position] = $fileDestination;
+    $showLicence = false;
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $data = array_map('trim', $_POST);
+        $errors = [];
+        /* Error management */
+        if (empty($data['lastname'])) {
+            $errors[] = 'Lastname must not be empty';
+        }
+        $lastnameLength = 255;
+        if (strlen($data['lastname']) > $lastnameLength) {
+            $errors[] = 'Must not contain more than ' . $lastnameLength . '  character';
+        }
+        if (empty($data['firstname'])) {
+            $errors[] = 'Firstname must not be empty';
+        }
+        $firstnameLength = 255;
+        if (strlen($data['firstname']) > $firstnameLength) {
+            $errors[] = 'Must not contain more than ' . $firstnameLength . ' character';
+        }
+        if (empty($data['street'])) {
+            $errors[] = 'Street must not be empty';
+        }
+        $streetLength = 255;
+        if (strlen($data['street']) > $streetLength) {
+            $errors[] = 'Must not contain more than ' . $streetLength . ' character';
+        }
+        if (empty($data['city'])) {
+            $errors[] = 'City must not be empty';
+        }
+        $cityLength = 255;
+        if (strlen($data['city']) > $cityLength) {
+            $errors[] = 'Must not contain more than ' . $cityLength . ' character';
+        }
+        if (empty($data['country'])) {
+            $errors[] = 'Country must not be empty';
+        }
+        $countryLength = 255;
+        if (strlen($data['country']) > $countryLength) {
+            $errors[] = 'Must not contain more than ' . $countryLength . ' character';
+        }
+        if (empty($data['gender'])) {
+            $errors[] = 'Gender must not be empty';
+        }
+        $genderLength = 255;
+        if (strlen($data['gender']) > $genderLength) {
+            $errors[] = 'Must not contain more than ' . $genderLength . ' character';
+        }
+        if (empty($data['hair'])) {
+            $errors[] = 'Hair must not be empty';
+        }
+        $hairLength = 255;
+        if (strlen($data['hair']) > $hairLength) {
+            $errors[] = 'Must not contain more than ' . $hairLength . ' character';
+        }
+        /* Uploaded image */
+        if (!empty($_FILES['files']['name'][0])) {
+            $files = $_FILES['files'];
+            $uploaded = array();
+            $failed = array();
+            $allowed = array('jpg', 'png', 'webp', 'gif');
+            foreach ($files['name'] as $position => $fileName) {
+                $fileTemp = $files['tmp_name'][$position];
+                $fileSize = $files['size'][$position];
+                $fileError = $files['error'][$position];
+                $fileExt = explode('.', $fileName);
+                $fileExt = strtolower(end($fileExt));
+                if (in_array($fileExt,  $allowed)) {
+                    if ($fileError === 0) {
+                        if ($fileSize <= 1000000) {
+                            $fileNameNew = uniqid('', true) . '.' . $fileExt;
+                            $fileDestination = 'uploads/' . $fileNameNew;
+                            if (move_uploaded_file($fileTemp, $fileDestination)) {
+                                // The image has been copied to the uploads folder, the new name is on variable : $fileNameNew
+                                $uploaded[$position] = $fileDestination;
+                            } else {
+                                $failed[$position] = "[{$fileName}] failed to upload.";
+                            }
                         } else {
-                            $failed[$position] = "[{$fileName}] failed to upload.";
+                            $positon = "";
+                            $failed[$positon] = "[{$fileName}] is too large.";
                         }
                     } else {
-                        $positon = "";
-                        $failed[$positon] = "[{$fileName}] is too large.";
+                        $failed[$position] = "[{$fileName}] errored with code {$fileError}.";
                     }
                 } else {
-                    $failed[$position] = "[{$fileName}] errored with code {$fileError}.";
+                    $failed[$position] = "[{$fileName}] file extension '{$fileExt}' is not allowed.";
                 }
-            } else {
-                $failed[$position] = "[{$fileName}] file extension '{$fileExt}' is not allowed.";
             }
+        } else {
+            /* If there not any upload image, display default image */
+            $fileDestination = "uploads/homer.jpg";
         }
-    } else {
-        /* If there not any upload image, display default image */
-        $fileDestination = "uploads/homer.jpg";
+        /* Show license if there are no errors in the form */
+        if (empty($errors)) {
+            $showLicence = true;
+        }
     }
-    /* Show license if there are no errors in the form */
-    if (empty($errors)) {
-        $showLicence = true;
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="#">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../assets/styles/navbar.css">
-        <link rel="stylesheet" href="../../assets/styles/style.css">
+        <?php
+            /* Head included */
+            include '../../../includes/head.html';
+        ?>
         <title>PHP Upload Image</title>
     </head>
     <?php
         /* Navbar included */
-        include '../../includes/navbar.php';
-        include '../includes/bottomNavbar.php';
+        include '../../../includes/navbar.php';
+        include '../../includes/bottomNavbar.php';
     ?>
     <body>
         <!-- Form -->
@@ -140,39 +133,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     }
                 ?>
                 <div>
-                    <label for="lastname">Nom :</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Nom" value="<?= $data['lastname'] ?? '' ?>" required>
+                    <label for="lastname">Lastname :</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Lastname" value="<?= $data['lastname'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="firstname">Prénom :</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Prénom" value="<?= $data['firstname'] ?? '' ?>" required>
+                    <label for="firstname">Firstname :</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Firstname" value="<?= $data['firstname'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="street">Rue :</label>
-                    <input type="text"  id="street" name="street" placeholder="Rue" value="<?= $data['street'] ?? '' ?>" required>
+                    <label for="street">Street :</label>
+                    <input type="text" id="street" name="street" placeholder="Street" value="<?= $data['street'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="city">Ville :</label>
-                    <input type="text"  id="city" name="city" placeholder="Ville" value="<?= $data['city'] ?? '' ?>" required>
+                    <label for="city">City :</label>
+                    <input type="text" id="city" name="city" placeholder="City" value="<?= $data['city'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="country">Pays :</label>
-                    <input type="text" id="country" name="country" placeholder="Pays" value="<?= $data['country'] ?? '' ?>" required>
+                    <label for="country">Country :</label>
+                    <input type="text" id="country" name="country" placeholder="Country" value="<?= $data['country'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="sex">Sexe :</label>
-                    <input type="text"  id="sex" name="sex" placeholder="Sexe" value="<?= $data['sex'] ?? '' ?>" required>
+                    <label for="gender">Gender :</label>
+                    <input type="text"  id="gender" name="gender" placeholder="Gender" value="<?= $data['gender'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="hair">Cheveu :</label>
-                    <input type="text" id="hair" name="hair" placeholder="Cheveu" value="<?= $data['hair'] ?? '' ?>" required>
+                    <label for="hair">Hair :</label>
+                    <input type="text" id="hair" name="hair" placeholder="Hair" value="<?= $data['hair'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="imageUpload">Télécharger une image de profil : </label>    
+                    <label for="imageUpload">Upload profile picture : </label>    
                     <input type="file" name="files[]" id="imageUpload" multiple>
                 </div>
                 <div class="button">
-                    <button type="submit" class="button">ENVOYER</button>
+                    <button type="submit" class="button">SEND</button>
                 </div>
             </form>
         </div>
@@ -209,17 +202,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="row m-0 p-0 col-7">
                         <div class="col-12 m-0 p-2 bg-warning text-center">
-                            <h1>TAXICAB <br>LE PERMIS</h1>
+                            <h1>TAXICAB <br>THE LICENSE</h1>
                         </div>
                         <div class="col-12 m-0 p-2 bg-success text-end">
                             <?php if (isset($_POST['lastname'])) : ?>
                                 <?php
-                                    echo $_POST['lastname'] . " " . $_POST['firstname'] . "<br/>";
-                                    echo $_POST['street'] . "<br/>";
-                                    echo $_POST['city'] . " " . $_POST['country'] . "<br/>";
-                                    echo "SEX : " . $_POST['sex'] . "<br/>";
+                                    echo "NAME : " . $_POST['lastname'] . " " . $_POST['firstname'] . "<br/>";
+                                    echo "STREET : " . $_POST['street'] . "<br/>";
+                                    echo "CITY : " . $_POST['city'] . " " . $_POST['country'] . "<br/>";
+                                    echo "GENDER : " . $_POST['gender'] . "<br/>";
                                     echo "HAIR : " . $_POST['hair'] . "<br/>";
-                                    echo "Signature";
+                                    echo "SIGNATURE";
                                 ?>
                             <?php endif ?>
                         </div>

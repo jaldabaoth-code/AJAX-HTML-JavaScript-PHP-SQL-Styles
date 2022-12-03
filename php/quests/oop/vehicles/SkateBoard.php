@@ -1,7 +1,6 @@
 <?php
+    require_once 'Vehicle.php';
 
-require_once 'Vehicle.php';
-
-class SkateBoard extends Vehicle
-{
-}
+    class SkateBoard extends Vehicle
+    {
+    }
