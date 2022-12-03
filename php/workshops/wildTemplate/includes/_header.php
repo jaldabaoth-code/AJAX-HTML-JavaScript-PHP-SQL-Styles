@@ -3,7 +3,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                    <img src="favicon.png" alt="Logo">
+                    <img src="assets/images/favicon.png" alt="Logo">
                 </a>
             </div>
             <div id="navbarMenu" class="navbar-menu">

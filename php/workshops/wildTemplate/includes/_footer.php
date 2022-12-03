@@ -3,7 +3,7 @@
         <div class="columns">
             <div class="column">
                 <figure class="image image-footer has-image-centered">
-                    <img src="images/wildcodeschool.png" alt="WCS logo">
+                    <img src="assets/images/wildcodeschool.png" alt="WCS logo">
                 </figure>
                 <p>
                     <strong class="has-text-weight-semibold">

@@ -76,7 +76,7 @@
             $jedis[] = "Rey";
             echo $jedis[1] . " ";
             foreach ($jedis as $jediName) {
-                echo $jediName;
+                echo $jediName . " ";
             }
         ?>
         <br/>

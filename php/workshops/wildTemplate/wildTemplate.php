@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="#">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="../../assets/styles/navbar.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="../../../assets/styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
         <title>Wild Template</title>
     </head>
     <?php
         /* Navbar included */
-        include '../../includes/navbar.php';
-        include '../includes/bottomNavbar.php';
+        include '../../../includes/navbar.php';
+        include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <?php include "_header.php"; ?>
+        <?php include "includes/_header.php"; ?>
         <section class="hero is-info is-medium is-bold">
             <div class="hero-body header-image">
                 <div class="container has-text-centered">
@@ -149,6 +148,6 @@
                 </section>
             </div>
         </main>
-        <?php include "_footer.php"; ?>
+        <?php include "includes/_footer.php"; ?>
     </body>
 </html>
