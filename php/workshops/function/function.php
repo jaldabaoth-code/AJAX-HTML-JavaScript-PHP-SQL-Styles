@@ -14,7 +14,7 @@
     ?>
     <body>
         <h1>PHP Function - Workshop</h1>
-        <h1>Function</h1>
+        <h2>Function</h2>
         <?php
             require("src/function.php");
             $watchmenList = ['Dr. Manhattan', 'Ozymandias', 'Silk Spectre', 'Rorschach', 'The comedian', 'Nite Owl'];

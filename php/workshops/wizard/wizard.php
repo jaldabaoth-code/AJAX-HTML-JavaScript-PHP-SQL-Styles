@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="#">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../assets/styles/navbar.css">
-        <link rel="stylesheet" href="../../assets/styles/style.css">
-        <title>Workshop Wizard PHP</title>
+        <?php
+            /* Head included */
+            include '../../../includes/head.html';
+        ?>
+        <title>PHP Wizard</title>
     </head>
     <?php
         /* Navbar included */
-        include '../../includes/navbar.php';
-        include '../includes/bottomNavbar.php';
+        include '../../../includes/navbar.php';
+        include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>Workshop Wizard PHP</h1>
+        <h1>PHP Wizard - Workshop</h1>
+        <h2>Wizard</h2>
         <?php
             /* EXO4 - Include/require */
-            include("header.php");
-
-            /* EXO1 - Démarrage */
+            include("includes/header.php");
+            /* EXO1 - Startup */
             echo "Hello fellowship <br/>";
-
             /* EXO2 - Variables */
             $ringBearer = "Sauron";
             $ringMaker = "Sauron";
@@ -39,7 +35,6 @@
             echo "1 number of additional company members : " . $numberOfCompanyMembers . "<br/>";
             $middleEarth = "";
             echo $middleEarth;
-
             /* EXO3 - Strings */
             echo "The wearer is " . $ringBearer . "<br/>";
             $phrase = "The wearer is " . $ringBearer;
@@ -47,11 +42,10 @@
             echo strtoupper($ringMaker) . "<br/>";
             $ringMaker = strtoupper($ringMaker);
             echo strtoupper($ringMaker) . "<br/>";
-
             /* EXO4 - Include/require */
-            include("footer.php");
+            include("includes/footer.php");
             $wizard = 'Gandalf';
-            require("hello.php");
+            require("includes/hello.php");
         ?>
     </body>
 </html>
