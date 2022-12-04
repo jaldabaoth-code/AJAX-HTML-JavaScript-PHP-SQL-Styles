@@ -10,4 +10,7 @@
     <a class="<?= ($pageName == 'rdbmsIntroduction') ? 'active' : '' ?>" href="../../../sql/quests/rdbmsIntroduction/rdbmsIntroduction.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> RDBMS Introduction
     </a>
+    <a class="<?= ($pageName == 'join') ? 'active' : '' ?>" href="../../../sql/quests/join/join.php">
+        <img class="nav-image" src="../../../assets/images/quest.png"> Join
+    </a>
 </div>

@@ -1,4 +1,4 @@
-/* Exercices 1 - 2 -3 */
+
 /* Exercise 1 */
 SELECT * FROM wizard WHERE birthday BETWEEN '1975-01-01' AND '1985-01-01';
 SELECT firstname FROM wizard WHERE firstname LIKE 'h%';

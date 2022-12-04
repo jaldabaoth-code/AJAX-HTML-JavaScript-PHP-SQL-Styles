@@ -1,9 +1,9 @@
+
 /* Delete fields in table wizard */
 ALTER TABLE wizard DROP birthday;
 ALTER TABLE wizard DROP birth_place;
 ALTER TABLE wizard DROP biography;
 ALTER TABLE wizard DROP is_muggle;
-
 ALTER TABLE wizard MODIFY firstname VARCHAR(80) NOT NULL;
 ALTER TABLE wizard MODIFY lastname VARCHAR(80) NOT NULL;
 
@@ -36,7 +36,6 @@ FROM player
 INNER JOIN wizard ON player.wizard_id=wizard.id
 INNER JOIN team ON player.team_id=team.id
 ORDER BY name ASC, role ASC, wizard.lastname ASC, wizard.firstname ASC;
-
 
 /* Returns only the first and last names of players with the role of seeker, sorted alphabetically by last name then first name */
 SELECT wizard.lastname AS lastnames, wizard.firstname AS firstnames

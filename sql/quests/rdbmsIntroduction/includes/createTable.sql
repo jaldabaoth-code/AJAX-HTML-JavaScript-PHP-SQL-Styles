@@ -1,4 +1,5 @@
-/* Exercice create table */
+
+/* Exercice : Create table */
 CREATE TABLE `wizard_db_quest`.`wizard` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `firstname` VARCHAR(100) NOT NULL,
