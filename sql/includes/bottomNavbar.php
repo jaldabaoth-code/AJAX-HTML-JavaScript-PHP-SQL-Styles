@@ -13,4 +13,10 @@
     <a class="<?= ($pageName == 'join') ? 'active' : '' ?>" href="../../../sql/quests/join/join.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Join
     </a>
+    <a class="<?= ($pageName == 'advanced') ? 'active' : '' ?>" href="../../../sql/quests/advanced/advanced.php">
+        <img class="nav-image" src="../../../assets/images/quest.png"> Advanced
+    </a>
+    <a class="<?= ($pageName == 'select') ? 'active' : '' ?>" href="../../../sql/workshops/select/select.php">
+        <img class="nav-image" src="../../../assets/images/workshop.png"> Select
+    </a>
 </div>
