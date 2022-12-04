@@ -3,7 +3,7 @@
     <head>
         <?php
             /* Head included */
-            include '../../includes/head.html';
+            include '../../../includes/head.html';
         ?>
         <link rel="stylesheet" href="assets/styles/style.css">
         <title>Styles SCSS</title>
