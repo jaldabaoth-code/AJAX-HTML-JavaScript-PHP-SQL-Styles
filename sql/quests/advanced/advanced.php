@@ -5,7 +5,6 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <link rel="stylesheet" href="./style.css">
         <title>SQL Advanced</title>
     </head>
     <?php
