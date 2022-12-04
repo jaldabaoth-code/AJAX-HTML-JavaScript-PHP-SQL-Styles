@@ -12,6 +12,9 @@
     <a class="<?= ($pageName == 'array' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/array/array.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Array
     </a>
+    <a class="<?= ($pageName == 'multidimensionalArray' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/multidimensionalArray/multidimensionalArray.php">
+        <img class="nav-image" src="../../../assets/images/quest.png"> Multidimensional Array
+    </a>
     <a class="<?= ($pageName == 'conditional') ? 'active' : '' ?>" href="../../../php/quests/conditional/conditional.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Conditional
     </a>
