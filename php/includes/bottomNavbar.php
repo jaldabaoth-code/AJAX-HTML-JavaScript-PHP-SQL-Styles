@@ -33,6 +33,9 @@
     <a class="<?= ($pageName == 'xdebug') ? 'active' : '' ?>" href="../../../php/quests/xdebug/xdebug.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Xdebug
     </a>
+    <a class="<?= ($pageName == 'debugYourself') ? 'active' : '' ?>" href="../../../php/quests/debugYourself/debugYourself.php">
+        <img class="nav-image" src="../../../assets/images/quest.png"> Debug Yourself
+    </a>
     <a class="<?= ($pageName == 'array' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/array/array.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Array
     </a>
