@@ -51,4 +51,7 @@
     <a class="<?= ($pageName == 'wizard') ? 'active' : '' ?>" href="../../../php/workshops/wizard/wizard.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Wizard
     </a>
+    <a class="<?= ($pageName == 'form') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
+        <img class="nav-image" src="../../../assets/images/lesson.png"> Form
+    </a>
 </div>

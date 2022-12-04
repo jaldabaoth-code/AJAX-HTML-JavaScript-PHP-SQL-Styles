@@ -1,0 +1,45 @@
+:root {
+    --primary: #1321a3;
+    --light: #f2f2f6;
+    --error-background: #dba1a1;
+    --error-color: #ca1c1c;
+
+    --spacing: 8px;
+}
+
+form {
+    width: 50%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top:8px;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 4px;
+    padding: var(--spacing);
+    width: 200px;
+    margin:auto;
+    margin-top: var(--spacing);
+}
+
+button:hover {
+    filter:brightness(130%);
+}
+button:active {
+    filter:brightness(70%);
+}
+
+.error {
+    background-color: var(--error-background);
+    color: var(--error-color);
+    padding: var(--spacing);
+    border-radius:4px;
+    margin: var(--spacing);
+    list-style: none;
+}

@@ -72,5 +72,8 @@
                 </div>
             </form>
         </div>
+        <?php
+            include 'index2.php';
+        ?>
     </body>
 </html>

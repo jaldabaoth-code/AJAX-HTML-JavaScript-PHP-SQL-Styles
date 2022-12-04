@@ -23,7 +23,7 @@
             $errors[] = 'E-mail is required';
         }
         if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Wrong email format';
+            $errors[] = 'Wrong e-mail format';
         }
         if (empty($data['phone'])) {
             $errors[] = 'Phone number is required';
