@@ -6,7 +6,7 @@
             include '../../../includes/head.html';
         ?>
         <link rel="stylesheet" href="./style.css">
-        <title>SQL Advanced</title>
+        <title>SQL Kaamelott</title>
     </head>
     <?php
         /* Navbar included */
@@ -14,16 +14,12 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>SQL Advanced - Quest</h1>
-        <h2>Advanced</h2>
+        <h1>SQL Kaamelott - Quest</h1>
+        <h2>Kaamelott</h2>
         <pre>
-            <h3>File : insert.sql</h3>
+            <h3>File : kaamelott.sql</h3>
             <?php
-                include 'includes/insert.sql';
-            ?>
-            <h3>File : advanced.sql</h3>
-            <?php
-                include 'includes/advanced.sql';
+                include 'includes/kaamelott.sql';
             ?>
         </pre>
     </body>

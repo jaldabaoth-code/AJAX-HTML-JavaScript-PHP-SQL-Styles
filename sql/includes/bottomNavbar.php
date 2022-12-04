@@ -19,4 +19,7 @@
     <a class="<?= ($pageName == 'select') ? 'active' : '' ?>" href="../../../sql/workshops/select/select.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Select
     </a>
+    <a class="<?= ($pageName == 'kaamelott') ? 'active' : '' ?>" href="../../../sql/workshops/kaamelott/kaamelott.php">
+        <img class="nav-image" src="../../../assets/images/workshop.png"> Kaamelott
+    </a>
 </div>

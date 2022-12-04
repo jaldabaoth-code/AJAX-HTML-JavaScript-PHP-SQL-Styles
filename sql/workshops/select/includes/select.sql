@@ -12,7 +12,7 @@ SELECT firstname, lastname, Kingdom.name From Person LEFT JOIN Kingdom ON Kingdo
 SELECT AVG(age) From Person;
 
 /* The average is a bit high, isn't it? Write the query that allows to display the average of all the characters not having the role of magician */ 
-SELECT AVG(age) From Person INNER JOIN Role ON Role.id = Person.role_id WHERE Role.role != 'magicien';
+SELECT AVG(age) From Person INNER JOIN Role ON Role.id = Person.role_id WHERE Role.role != 'magician';
 
 /* Write the query that displays the number of characters per kingdom (include kingdoms with no characters) */ 
 SELECT COUNT(Person.id), Kingdom.name From Person LEFT JOIN Kingdom ON Kingdom.id = Person.kingdom_id GROUP BY Kingdom.name;

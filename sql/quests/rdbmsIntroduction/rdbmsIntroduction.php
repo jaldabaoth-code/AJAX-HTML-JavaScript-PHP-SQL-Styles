@@ -17,11 +17,11 @@
         <h1>SQL RDBMS Introduction - Quest</h1>
         <h2>RDBMS Introduction</h2>
         <pre>
-            <h3>Create table</h3>
+            <h3>File : createTable.sql</h3>
             <?php
                 include 'includes/createTable.sql';
             ?>
-            <h3>Exercices 1-2-3</h3>
+            <h3>File : rdbmsIntroduction.sql</h3>
             <?php
                 include 'includes/rdbmsIntroduction.sql';
             ?>

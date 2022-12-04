@@ -17,7 +17,7 @@
         <h1>SQL Select - Quest</h1>
         <h2>Select</h2>
         <pre>
-            <h3>Select</h3>
+            <h3>File : select.sql</h3>
             <?php
                 include 'includes/select.sql';
             ?>

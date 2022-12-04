@@ -17,11 +17,11 @@
         <h1>SQL Join - Quest</h1>
         <h2>Join</h2>
         <pre>
-            <h3>Insert</h3>
+            <h3>File : insert.sql</h3>
             <?php
                 include 'includes/insert.sql';
             ?>
-            <h3>Join</h3>
+            <h3>File : join.sql</h3>
             <?php
                 include 'includes/join.sql';
             ?>
