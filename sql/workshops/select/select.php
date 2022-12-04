@@ -13,7 +13,7 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>SQL Select - Quest</h1>
+        <h1>SQL Select - Workshop</h1>
         <h2>Select</h2>
         <pre>
             <h3>File : select.sql</h3>

@@ -13,7 +13,7 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>SQL Kaamelott - Quest</h1>
+        <h1>SQL Kaamelott - Workshop</h1>
         <h2>Kaamelott</h2>
         <pre>
             <h3>File : kaamelott.sql</h3>
