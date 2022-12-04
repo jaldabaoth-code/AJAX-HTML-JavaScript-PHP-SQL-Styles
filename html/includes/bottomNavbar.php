@@ -6,7 +6,7 @@
     }
 ?>
 <div class="bottom-nav">
-    <a class="<?= ($pageName == 'index.php' || $pageName == '') ? 'active' : '' ?>" href="../../index.php">Home</a>
+    <?= ($pageName == 'index.php' || $pageName == '') ? "<a class='active' href='./index.php'>Home</a>" : "<a class='' href='../../index.php'>Home</a>" ?>
     <a class="<?= ($pageName == 'form') ? 'active' : '' ?>" href="../../../html/quests/form/form.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Form
     </a>
