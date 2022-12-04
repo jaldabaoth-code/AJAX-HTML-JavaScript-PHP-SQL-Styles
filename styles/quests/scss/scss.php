@@ -10,8 +10,8 @@
     </head>
     <?php
         /* Navbar included */
-        include '../../includes/navbar.php';
-        include '../includes/bottomNavbar.php';
+        include '../../../includes/navbar.php';
+        include '../../includes/bottomNavbar.php';
     ?>
     <body>
         <h1>Styles SCSS - Quest</h1>

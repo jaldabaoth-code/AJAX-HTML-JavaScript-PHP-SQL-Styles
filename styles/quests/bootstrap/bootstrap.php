@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php
+    <?php
             /* Head included */
-            include '../../includes/head.html';
+            include '../../../includes/head.html';
         ?>
         <title>Style Bootstrap</title>
     </head>
     <?php
         /* Navbar included */
-        include '../../includes/navbar.php';
-        include '../includes/bottomNavbar.php';
+        include '../../../includes/navbar.php';
+        include '../../includes/bottomNavbar.php';
     ?>
     <body>
         <h1>Style Bootstrap - Quest</h1>
