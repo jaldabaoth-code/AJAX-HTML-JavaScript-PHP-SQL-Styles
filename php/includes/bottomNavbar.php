@@ -39,10 +39,13 @@
     <a class="<?= ($pageName == 'debugYourself') ? 'active' : '' ?>" href="../../../php/quests/debugYourself/debugYourself.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Debug Yourself
     </a>
+    <a class="<?= ($pageName == 'function' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/function/function.php">
+        <img class="nav-image" src="../../../assets/images/quest.png"> Function
+    </a>
     <a class="<?= ($pageName == 'array' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/array/array.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Array
     </a>
-    <a class="<?= ($pageName == 'function') ? 'active' : '' ?>" href="../../../php/workshops/function/function.php">
+    <a class="<?= ($pageName == 'function' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/function/function.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Function
     </a>
     <a class="<?= ($pageName == 'wildTemplate') ? 'active' : '' ?>" href="../../../php/workshops/wildTemplate/wildTemplate.php">

@@ -1,11 +1,6 @@
 <?php
     $titles = ['Mister' => 'Mr', 'Madam' => 'Mrs', 'Miss' => 'Ms'];
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        /*
-            foreach ($_POST as $key => $value) {
-                $data[$key] = trim($value);
-            }
-        */
         $data = array_map('trim', $_POST);
         $errors = [];
         if (empty($data['firstname'])) {
