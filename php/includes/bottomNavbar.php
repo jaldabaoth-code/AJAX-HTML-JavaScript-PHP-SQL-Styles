@@ -24,7 +24,7 @@
     <a class="<?= ($pageName == 'pdo') ? 'active' : '' ?>" href="../../../php/quests/pdo/pdo.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> PDO
     </a>
-    <a class="<?= ($pageName == 'form') ? 'active' : '' ?>" href="../../../php/quests/form/form.php">
+    <a class="<?= ($pageName == 'form' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/form/form.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Form
     </a>
     <a class="<?= ($pageName == 'oop') ? 'active' : '' ?>" href="../../../php/quests/oop/oop.php">
@@ -51,7 +51,7 @@
     <a class="<?= ($pageName == 'wizard') ? 'active' : '' ?>" href="../../../php/workshops/wizard/wizard.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Wizard
     </a>
-    <a class="<?= ($pageName == 'form') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
+    <a class="<?= ($pageName == 'form' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
         <img class="nav-image" src="../../../assets/images/lesson.png"> Form
     </a>
 </div>

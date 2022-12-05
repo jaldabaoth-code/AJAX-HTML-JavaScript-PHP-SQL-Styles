@@ -87,7 +87,7 @@ class RecipeController
 
     public function deleteRecipe() 
     {
-        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $this->recipeModel->removeRecipe(trim($_POST['id']));
             header('Location: /');
         }

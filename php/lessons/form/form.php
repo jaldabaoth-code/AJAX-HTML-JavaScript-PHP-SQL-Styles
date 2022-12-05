@@ -1,15 +1,13 @@
 <?php
-
-    $titles = ['Monsieur' => 'M', 'Madame' => 'Mme', 'Mademoiselle' => 'Melle'];
-
+    $titles = ['Mister' => 'Mr', 'Madam' => 'Mrs', 'Miss' => 'Ms'];
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // foreach($_POST as $key => $value) {
-        //     $data[$key] = trim($value);
-        // }
+        /*
+            foreach ($_POST as $key => $value) {
+                $data[$key] = trim($value);
+            }
+        */
         $data = array_map('trim', $_POST);
-
         $errors = [];
-
         if (empty($data['firstname'])) {
             $errors[] = 'Firstname is required';
         }
@@ -37,26 +35,17 @@
             // I process my form
             // Save in DB
             // Or send an email...
-            header('Location: index.php'); // GET
+            header('Location: form.php');
         }
     }
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livecoding form</title>
-    <link rel="stylesheet" href="style.css">
-</head> -->
-<head>
+    <head>
         <?php
             /* Head included */
             include '../../../includes/head.html';
         ?>
-
         <title>PHP Form</title>
     </head>
     <?php
@@ -64,38 +53,34 @@
         include '../../../includes/navbar.php';
         include '../../includes/bottomNavbar.php';
     ?>
-<body>
-    <h1>Wilder (livecodingForm)</h1>
-    <div class="form">
-        <form action="" method="POST" novalidate>
-            <?php if (!empty($errors)) : ?>
-                <ul class="error">
-                    <?php foreach ($errors as $error) : ?>
-                        <li><?= $error ?></li>
+    <body>
+        <h1>PHP Form - Lesson (Livecoding)</h1>
+        <h2>Wilder</h2>
+        <div class="form">
+            <form action="" method="POST" novalidate>
+                <?php if (!empty($errors)) : ?>
+                    <ul class="error">
+                        <?php foreach ($errors as $error) : ?>
+                            <li><?= $error ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Bilbo" value="<?= $data['firstname'] ?? '' ?>" required>
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Baggins" value="<?= $data['lastname'] ?? '' ?>" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="bilbo@baggins.me" value="<?= $data['email'] ?? '' ?>" required>
+                <label for="title">Title</label>
+                <select name="title" id="title">
+                    <?php foreach ($titles as $label => $title) : ?>
+                        <option <?php if (isset($data['title']) && $data['title'] === $title) : ?> selected <?php endif; ?> value="<?= $title ?>">
+                            <?= $label ?>
+                        </option>
                     <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
-            <label for="firstname">Firstname</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Bilbo" value="<?= $data['firstname'] ?? '' ?>" required>
-
-            <label for="lastname">Lastname</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Baggins" value="<?= $data['lastname'] ?? '' ?>" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="bilbo@baggins.me" value="<?= $data['email'] ?? '' ?>" required>
-
-            <label for="title">Title</label>
-            <select name="title" id="title">
-                <?php foreach ($titles as $label => $title) : ?>
-                    <option <?php if (isset($data['title']) && $data['title'] === $title) : ?> selected <?php endif; ?> value="<?= $title ?>">
-                        <?= $label ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-
-            <button  class="button">Send</button>
-        </form>
-    </div>
-</body>
-
+                </select>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </div>
+    </body>
 </html>

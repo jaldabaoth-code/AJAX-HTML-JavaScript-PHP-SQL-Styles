@@ -10,11 +10,12 @@ class Bicycle
     public int $nbWheels = 2;
     
     /*
-    public function __construct(string $color, int $nbSeats)
-    {
-        $this->color = $color;
-        $this->nbSeats = $nbSeats;
-    }*/
+        public function __construct(string $color, int $nbSeats)
+        {
+            $this->color = $color;
+            $this->nbSeats = $nbSeats;
+        }
+    */
 
     public function forward(): string
     {
@@ -41,7 +42,7 @@ class Bicycle
 
     public function setCurrentSpeed(int $currentSpeed): void
     {
-        if($currentSpeed >= 0){
+        if ($currentSpeed >= 0){
             $this->currentSpeed = $currentSpeed;
         }
     }

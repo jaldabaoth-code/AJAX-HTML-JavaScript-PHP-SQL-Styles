@@ -125,7 +125,7 @@
             foreach ($jedisNameAge as $raceName => $characterNames) {
         ?> 
                 <h2> <?php echo $raceName; ?> </h2>
-                <?php foreach($characterNames as $characterName) { ?>
+                <?php foreach ($characterNames as $characterName) { ?>
                     <li>
                         <?php echo $characterName; ?>
                     </li>

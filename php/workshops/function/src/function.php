@@ -22,7 +22,7 @@
     /* EX4 - END */
     function whoAmI(string $name, array $watchmen): ?string
     {
-        foreach($watchmen as $watchmenName)
+        foreach ($watchmen as $watchmenName)
         {
             if ($name == $watchmenName) {
                 $message = $name . " is a watchmen";
