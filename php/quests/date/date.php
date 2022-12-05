@@ -14,7 +14,7 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title>Date</title>
+        <title>PHP Date</title>
     </head>
     <?php
         /* Navbar included */

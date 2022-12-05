@@ -68,27 +68,25 @@
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
-                    <label for="lastname">Lastname :</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your Lastname" value="<?= $data['lastname'] ?? '' ?>" required>
-                    <label for="firstname">Firstname :</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Your Firstname" value="<?= $data['firstname'] ?? '' ?>" required>
-                    <label for="email">E-mail :</label>
-                    <input type="email" id="email" name="email" placeholder="exemple@email.com" value="<?= $data['email'] ?? '' ?>" required>
-                    <label for="phone">Phone number :</label>
-                    <input type="phone" id="phone" name="phone" placeholder="01 02 03 04 06" value="<?= $data['phone'] ?? '' ?>" required>
-                    <label for="subject">Subject :</label>
-                    <select id="subject" name="subject">
-                        <?php foreach ($subjects as $label => $subject) : ?>
-                            <option <?php if (isset($data['subject']) && $data['subject'] === $subject) : ?> selected <?php endif; ?> value="<?= $subject ?>">
-                            <?= $label ?>
-                        </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" placeholder="Your Message" value="<?= $data['message'] ?? '' ?>" required></textarea>
-                <div class="button">
-                    <button type="submit" class="button">Send</button>
-                </div>
+                <label for="lastname">Lastname :</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Your Lastname" value="<?= $data['lastname'] ?? '' ?>" required>
+                <label for="firstname">Firstname :</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Your Firstname" value="<?= $data['firstname'] ?? '' ?>" required>
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" value="<?= $data['email'] ?? '' ?>" required>
+                <label for="phone">Phone number :</label>
+                <input type="phone" id="phone" name="phone" placeholder="01 02 03 04 06" value="<?= $data['phone'] ?? '' ?>" required>
+                <label for="subject">Subject :</label>
+                <select id="subject" name="subject">
+                    <?php foreach ($subjects as $label => $subject) : ?>
+                        <option <?php if (isset($data['subject']) && $data['subject'] === $subject) : ?> selected <?php endif; ?> value="<?= $subject ?>">
+                        <?= $label ?>
+                    </option>
+                    <?php endforeach; ?>
+                </select>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Your Message" value="<?= $data['message'] ?? '' ?>" required></textarea>
+                <button type="submit" class="button">Send</button>
             </form>
         </div>
     </body>

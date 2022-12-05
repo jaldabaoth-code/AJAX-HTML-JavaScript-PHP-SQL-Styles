@@ -164,9 +164,7 @@
                     <label for="imageUpload">Upload profile picture : </label>    
                     <input type="file" name="files[]" id="imageUpload" multiple>
                 </div>
-                <div class="button">
-                    <button type="submit" class="button">Send</button>
-                </div>
+                <button type="submit" class="button">Send</button>
             </form>
         </div>
         <!-- Licence -->

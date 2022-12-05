@@ -21,7 +21,7 @@
     <a class="<?= ($pageName == 'date') ? 'active' : '' ?>" href="../../../php/quests/date/date.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Date
     </a>
-    <a class="<?= ($pageName == 'pdo') ? 'active' : '' ?>" href="../../../php/quests/pdo/pdo.php">
+    <a class="<?= ($pageName == 'pdo' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/pdo/pdo.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> PDO
     </a>
     <a class="<?= ($pageName == 'form' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/form/form.php">
@@ -53,6 +53,9 @@
     </a>
     <a class="<?= ($pageName == 'wizard') ? 'active' : '' ?>" href="../../../php/workshops/wizard/wizard.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> Wizard
+    </a>
+    <a class="<?= ($pageName == 'pdo' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/pdo/pdo.php">
+        <img class="nav-image" src="../../../assets/images/workshop.png"> PDO
     </a>
     <a class="<?= ($pageName == 'form' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
         <img class="nav-image" src="../../../assets/images/lesson.png"> Form

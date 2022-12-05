@@ -67,9 +67,7 @@
                     <label for="firstname">Firstname :</label>
                     <input type="text" id="firstname" name="firstname" placeholder="Your Firstname" value="<?= $data['firstname'] ?? '' ?>" required>
                 </div>
-                <div class="button">
-                    <button type="submit" class="button">Send</button>
-                </div>
+                <button type="submit" class="button">Send</button>
             </form>
         </div>
         <hr>

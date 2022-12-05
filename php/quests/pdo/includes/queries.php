@@ -1,6 +1,4 @@
 <?php
-    require_once '../../../.env.php';
-    $pdo = new \PDO(DSN, USER, PASS);
     echo "With fetchAll and PDO::FETCH_BOTH";
     // ----- With fetchAll and PDO::FETCH_BOTH ----- //
     $query = "SELECT * FROM friend";

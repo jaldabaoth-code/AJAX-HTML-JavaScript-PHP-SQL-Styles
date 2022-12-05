@@ -5,7 +5,7 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title>Style Bootstrap</title>
+        <title>Styles Bootstrap</title>
     </head>
     <?php
         /* Navbar included */
@@ -13,7 +13,7 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>Style Bootstrap - Quest</h1>
+        <h1>Styles Bootstrap - Quest</h1>
         <h2>The eye of sauron</h2>
         <div class="container">
             <div class="row no-gutters">

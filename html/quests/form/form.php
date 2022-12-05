@@ -36,9 +36,7 @@
                 </select>
                 <label for="message">Message :</label>
                 <textarea id="message" name="message"></textarea>
-                <div class="button">
-                    <button type="submit" class="button">Send</button>
-                </div>
+                <button type="submit" class="button">Send</button>
             </form>
         </div>
     </body>
