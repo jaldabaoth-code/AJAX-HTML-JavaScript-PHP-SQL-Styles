@@ -1,25 +1,25 @@
 <?php
-    /* EX1 - FUNCTION */
+    /* Exercise 1 - Function */
     function sayHello1()
     {
         echo "Hello NIte Owl";
     }
 
-    /* EX2 - RETURN */
+    /* Exercise2 - Return */
     function sayHello2(): string
     {
         $sayHello = "Hello NIte Owl";
         return $sayHello;
     }
 
-    /* EX3 - SETTING */
+    /* Exercise 3 - Setting */
     function sayHello3(string $name): string
     {
         $sayHello = "Hello " . $name;
         return $sayHello;
     }
 
-    /* EX4 - END */
+    /* Exercise 4 - End */
     function whoAmI(string $name, array $watchmen): ?string
     {
         foreach ($watchmen as $watchmenName)
@@ -33,4 +33,3 @@
         }
         return $message; 
     }
-    

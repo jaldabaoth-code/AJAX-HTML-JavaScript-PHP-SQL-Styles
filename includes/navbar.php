@@ -1,4 +1,4 @@
-<!-- get current URI -->
+<!-- Get current URI -->
 <?php
     $uri = $_SERVER['REQUEST_URI'];
     $pageGroupeName = explode('/', $uri)[1];

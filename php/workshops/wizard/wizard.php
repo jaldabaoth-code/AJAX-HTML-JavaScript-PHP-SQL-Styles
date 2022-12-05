@@ -16,11 +16,11 @@
         <h1>PHP Wizard - Workshop</h1>
         <h2>Wizard</h2>
         <?php
-            /* EXO4 - Include/require */
+            /* Exercise 4 - Include */
             include("includes/header.php");
-            /* EXO1 - Startup */
+            /* Exercise 1 - Startup */
             echo "Hello fellowship <br/>";
-            /* EXO2 - Variables */
+            /* Exercise 2 - Variables */
             $ringBearer = "Sauron";
             $ringMaker = "Sauron";
             $numberOfCompanyMembers = "8";
@@ -35,14 +35,14 @@
             echo "1 number of additional company members : " . $numberOfCompanyMembers . "<br/>";
             $middleEarth = "";
             echo $middleEarth;
-            /* EXO3 - Strings */
+            /* Exercise 3 - Strings */
             echo "The wearer is " . $ringBearer . "<br/>";
             $phrase = "The wearer is " . $ringBearer;
             echo $phrase . " and ". $ringMaker . " is looking for him <br/>";
             echo strtoupper($ringMaker) . "<br/>";
             $ringMaker = strtoupper($ringMaker);
             echo strtoupper($ringMaker) . "<br/>";
-            /* EXO4 - Include/require */
+            /* Exercise 4 - Include/Require */
             include("includes/footer.php");
             $wizard = 'Gandalf';
             require("includes/hello.php");

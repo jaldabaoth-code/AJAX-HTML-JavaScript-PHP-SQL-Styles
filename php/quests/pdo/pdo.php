@@ -1,6 +1,5 @@
 <?php
     require_once '../../../.env.php';
-
     $pdo = new \PDO(DSN, USER, PASS);
     /* Conditions for form constraints */
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -76,7 +75,7 @@
         <hr>
         <h3>Queries</h3>
         <?php
-            include 'queries.php';
+            include 'includes/queries.php';
         ?>
     </body>
 </html>

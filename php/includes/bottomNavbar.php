@@ -27,7 +27,7 @@
     <a class="<?= ($pageName == 'form' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/form/form.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> Form
     </a>
-    <a class="<?= ($pageName == 'oop') ? 'active' : '' ?>" href="../../../php/quests/oop/oop.php">
+    <a class="<?= ($pageName == 'oop' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/oop/oop.php">
         <img class="nav-image" src="../../../assets/images/quest.png"> OOP
     </a>
     <a class="<?= ($pageName == 'uploadImage') ? 'active' : '' ?>" href="../../../php/quests/uploadImage/uploadImage.php">
@@ -56,5 +56,8 @@
     </a>
     <a class="<?= ($pageName == 'form' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
         <img class="nav-image" src="../../../assets/images/lesson.png"> Form
+    </a>
+    <a class="<?= ($pageName == 'oop' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/oop/oop.php">
+        <img class="nav-image" src="../../../assets/images/lesson.png"> OOP
     </a>
 </div>
