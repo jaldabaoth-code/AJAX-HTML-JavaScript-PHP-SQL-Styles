@@ -17,7 +17,7 @@
         <h2>Form</h2>
         <!-- HTML form -->
         <div class="form">
-            <form action="result.php" method="POST" class="login">
+            <form action="result.php" method="POST">
                 <label for="lastname">Lastname :</label>
                 <input type="text" id="lastname" name="lastname">
                 <label for="firstname">Firstname :</label>
@@ -37,7 +37,7 @@
                 <label for="message">Message :</label>
                 <textarea id="message" name="message"></textarea>
                 <div class="button">
-                    <button type="submit" class="button">Send your message</button>
+                    <button type="submit" class="button">Send</button>
                 </div>
             </form>
         </div>

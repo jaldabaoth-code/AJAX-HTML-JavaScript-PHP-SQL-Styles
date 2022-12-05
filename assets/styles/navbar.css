@@ -56,4 +56,5 @@
 
 .nav-image {
     width: 15px;
+    vertical-align: baseline;
 }

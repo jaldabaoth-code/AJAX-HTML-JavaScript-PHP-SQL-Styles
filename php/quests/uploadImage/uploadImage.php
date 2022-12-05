@@ -116,7 +116,7 @@
         <div class="form">
             <h1>PHP Upload Image - Quest</h1>
             <h2>Upload Image</h2>
-            <form action="uploadImage.php" method="POST" enctype="multipart/form-data" class="login" novalidate>
+            <form action="uploadImage.php" method="POST" enctype="multipart/form-data" novalidate>
                 <!-- Show errors -->
                 <?php if (!empty($errors)) : ?>
                     <ul class="error">
@@ -165,7 +165,7 @@
                     <input type="file" name="files[]" id="imageUpload" multiple>
                 </div>
                 <div class="button">
-                    <button type="submit" class="button">SEND</button>
+                    <button type="submit" class="button">Send</button>
                 </div>
             </form>
         </div>

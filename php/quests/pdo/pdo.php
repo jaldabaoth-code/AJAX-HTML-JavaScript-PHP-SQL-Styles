@@ -52,7 +52,7 @@
         <h2>PDO</h2>
         <div class="form">
             <h3>Form</h3>
-            <form action="" method="POST" class="login" novalidate>
+            <form action="" method="POST" novalidate>
                 <?php if (!empty($errors)) : ?>
                     <ul class="error">
                         <?php foreach ($errors as $error) : ?>
@@ -69,7 +69,7 @@
                     <input type="text" id="firstname" name="firstname" placeholder="Your Firstname" value="<?= $data['firstname'] ?? '' ?>" required>
                 </div>
                 <div class="button">
-                    <button type="submit" class="button">Send your message</button>
+                    <button type="submit" class="button">Send</button>
                 </div>
             </form>
         </div>

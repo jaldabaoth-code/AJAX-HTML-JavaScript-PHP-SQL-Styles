@@ -66,9 +66,8 @@
     ?>
 <body>
     <h1>Wilder (livecodingForm)</h1>
-    <!-- login class and button class  check for php and html form -->
     <div class="form">
-        <form action="" method="POST"  class="login"  novalidate>
+        <form action="" method="POST" novalidate>
             <?php if (!empty($errors)) : ?>
                 <ul class="error">
                     <?php foreach ($errors as $error) : ?>
