@@ -46,6 +46,7 @@ select {
 
 .button {
     margin-top: 5px;
+    margin-bottom: 100px;
     background-color: black;
     border: 1px black;
     color: white;

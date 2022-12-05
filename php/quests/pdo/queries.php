@@ -1,46 +1,48 @@
 <?php
-
     require_once '../../../.env.php';
 
     $pdo = new \PDO(DSN, USER, PASS);
-
-
+    // ----- Insert into table ----- //
     /*
         $query = "INSERT INTO friend (firstname, lastname) VALUES ('Chandler', 'Bing')";
         $statement = $pdo->exec($query);
     */
-
-    // ----- AVEC fetchAll ET PDO::FETCH_BOTH ----- //
+    echo "With fetchAll and PDO::FETCH_BOTH";
+    // ----- WITH fetchAll AND PDO::FETCH_BOTH ----- //
     $query = "SELECT * FROM friend";
     $statement = $pdo->query($query);
     // $friends = $statement->fetchAll();
     $friends = $statement->fetchAll(PDO::FETCH_BOTH); // same as $statement->fetchAll()
     var_dump($friends);
-
-    // ----- AVEC fetch ET PDO::FETCH_BOTH ----- //
+    echo "<hr>";
+    echo "With fetch and PDO::FETCH_BOTH";
+    // ----- WITH fetch AND PDO::FETCH_BOTH ----- //
     $query = "SELECT * FROM friend";
     $statement = $pdo->query($query);
     // $friends = $statement->fetchAll();
     $friends = $statement->fetch(PDO::FETCH_BOTH); // same as $statement->fetchAll()
     var_dump($friends);
-
-    // ----- AVEC fetch ET PDO::FETCH_ASSOC ----- //
+    echo "<hr>";
+    echo "With fetch and PDO::FETCH_ASSOC";
+    // ----- WITH fetch AND PDO::FETCH_ASSOC ----- //
     $query = "SELECT * FROM friend";
     $statement = $pdo->query($query);
     // $friends = $statement->fetchAll();
     $friends = $statement->fetch(PDO::FETCH_ASSOC); // same as $statement->fetchAll()
     var_dump($friends);
-
-    // ----- AVEC fetch ET PDO::FETCH_NUM ----- //
+    echo "<hr>";
+    echo "With fetch and PDO::FETCH_NUM";
+    // ----- WITH fetch AND PDO::FETCH_NUM ----- //
     $query = "SELECT * FROM friend";
     $statement = $pdo->query($query);
     // $friends = $statement->fetchAll();
     $friends = $statement->fetch(PDO::FETCH_NUM); // same as $statement->fetchAll()
     var_dump($friends);
-
-    // ----- AVEC fetch ET PDO::FETCH_CLASS ----- //
+    echo "<hr>";
+    echo "With fetch and PDO::FETCH_CLASS";
+    // ----- WITH fetch AND PDO::FETCH_CLASS ----- //
     $query = "SELECT * FROM friend";
     $statement = $pdo->query($query);
-    $friends = $statement->fetchAll();
-    $friends = $statement->fetch(PDO::FETCH_CLASS); // same as $statement->fetchAll()
+    //$friends = $statement->fetchAll();
+    $friends = $statement->fetch(PDO::FETCH_CLASS | PDO::FETCH_CLASSTYPE); // same as $statement->fetchAll()
     var_dump($friends);

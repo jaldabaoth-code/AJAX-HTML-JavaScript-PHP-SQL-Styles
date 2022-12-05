@@ -51,6 +51,7 @@
         <h1>PHP PDO - Quest</h1>
         <h2>PDO</h2>
         <div class="form">
+            <h3>Form</h3>
             <form action="" method="POST" class="login" novalidate>
                 <?php if (!empty($errors)) : ?>
                     <ul class="error">
@@ -72,8 +73,10 @@
                 </div>
             </form>
         </div>
+        <hr>
+        <h3>Queries</h3>
         <?php
-            include 'index2.php';
+            include 'queries.php';
         ?>
     </body>
 </html>
