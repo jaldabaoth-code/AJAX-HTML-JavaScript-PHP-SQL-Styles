@@ -1,75 +1,67 @@
 <!-- Get current URI -->
-<?php
-    $pageName = '';
-    $workName = '';
-    if (isset(explode('/', $uri)[3])) {
-        $workName = explode('/', $uri)[2];
-        $pageName = explode('/', $uri)[3];
-    }
-?>
 <div class="bottom-nav">
-    <?= ($pageName == 'index.php' || $pageName == '') ? "<a class='active' href='./index.php'>Home</a>" : "<a class='' href='../../index.php'>Home</a>" ?>
-    <a class="<?= ($pageName == 'array' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/array/array.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Array
+    <?= ($currentPageName == 'index.php' || $currentPageName == '') ? "<a class='active' href='./index.php'>Home</a>" : "<a class='' href='../../index.php'>Home</a>" ?>
+    <a class="<?= ($currentPageName == 'array' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/array/array.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Array
     </a>
-    <a class="<?= ($pageName == 'multidimensionalArray' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/multidimensionalArray/multidimensionalArray.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Multidimensional Array
+    <a class="<?= ($currentPageName == 'multidimensionalArray' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/multidimensionalArray/multidimensionalArray.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Multidimensional Array
     </a>
-    <a class="<?= ($pageName == 'conditional') ? 'active' : '' ?>" href="../../../php/quests/conditional/conditional.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Conditional
+    <a class="<?= ($currentPageName == 'conditional') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/conditional/conditional.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Conditional
     </a>
-    <a class="<?= ($pageName == 'date') ? 'active' : '' ?>" href="../../../php/quests/date/date.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Date
+    <a class="<?= ($currentPageName == 'date') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/date/date.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Date
     </a>
-    <a class="<?= ($pageName == 'pdo' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/pdo/pdo.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> PDO
+    <a class="<?= ($currentPageName == 'pdo' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/pdo/pdo.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory .'assets/images/quest.png' ?>"> PDO
     </a>
-    <a class="<?= ($pageName == 'form' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/form/form.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Form
+    <a class="<?= ($currentPageName == 'form' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/form/form.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Form
     </a>
-    <a class="<?= ($pageName == 'oop' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/oop/oop.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> OOP
+    <a class="<?= ($currentPageName == 'oop' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/oop/oop.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> OOP
     </a>
-    <a class="<?= ($pageName == 'uploadImage') ? 'active' : '' ?>" href="../../../php/quests/uploadImage/uploadImage.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Upload Image
+    <a class="<?= ($currentPageName == 'uploadImage') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/uploadImage/uploadImage.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Upload Image
     </a>
-    <a class="<?= ($pageName == 'xdebug') ? 'active' : '' ?>" href="../../../php/quests/xdebug/xdebug.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Xdebug
+    <a class="<?= ($currentPageName == 'xdebug') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/xdebug/xdebug.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Xdebug
     </a>
-    <a class="<?= ($pageName == 'debugYourself') ? 'active' : '' ?>" href="../../../php/quests/debugYourself/debugYourself.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Debug Yourself
+    <a class="<?= ($currentPageName == 'debugYourself') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/debugYourself/debugYourself.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Debug Yourself
     </a>
-    <a class="<?= ($pageName == 'function' && $workName == 'quests') ? 'active' : '' ?>" href="../../../php/quests/function/function.php">
-        <img class="nav-image" src="../../../assets/images/quest.png"> Function
+    <a class="<?= ($currentPageName == 'function' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/function/function.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Function
     </a>
-    <a class="<?= ($pageName == 'array' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/array/array.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> Array
+    <a class="<?= ($currentPageName == 'array' && $currentWorkName == 'workshops') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/array/array.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> Array
     </a>
-    <a class="<?= ($pageName == 'function' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/function/function.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> Function
+    <a class="<?= ($currentPageName == 'function' && $currentWorkName == 'workshops') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/function/function.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> Function
     </a>
-    <a class="<?= ($pageName == 'wildTemplate') ? 'active' : '' ?>" href="../../../php/workshops/wildTemplate/wildTemplate.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> Wild Template
+    <a class="<?= ($currentPageName == 'wildTemplate') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/wildTemplate/wildTemplate.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> Wild Template
     </a>
-    <a class="<?= ($pageName == 'wizard') ? 'active' : '' ?>" href="../../../php/workshops/wizard/wizard.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> Wizard
+    <a class="<?= ($currentPageName == 'wizard') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/wizard/wizard.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> Wizard
     </a>
-    <a class="<?= ($pageName == 'pdo' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/pdo/pdo.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> PDO
+    <a class="<?= ($currentPageName == 'pdo' && $currentWorkName == 'workshops') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/pdo/pdo.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> PDO
     </a>
-    <a class="<?= ($pageName == 'mvc1' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/mvc1/index.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> MVC 1
+    <a class="<?= ($currentPageName == 'mvc1' && $currentWorkName == 'workshops') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/mvc1/index.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> MVC 1
     </a>
-    <a class="<?= ($pageName == 'mvc2' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/mvc2/public/index.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> MVC 2
+    <a class="<?= ($currentPageName == 'mvc2' && $currentWorkName == 'workshops') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/mvc2/public/index.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> MVC 2
     </a>
-    <a class="<?= ($pageName == 'mvc3' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/mvc3/public/index.php">
-        <img class="nav-image" src="../../../assets/images/workshop.png"> MVC 3
+    <a class="<?= ($currentPageName == 'mvc3' && $currentWorkName == 'workshops') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/workshops/mvc3/public/index.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/workshop.png' ?>"> MVC 3
     </a>
-    <a class="<?= ($pageName == 'form' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
-        <img class="nav-image" src="../../../assets/images/lesson.png"> Form
+    <a class="<?= ($currentPageName == 'form' && $currentWorkName == 'lessons') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/lessons/form/form.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/lesson.png' ?>"> Form
     </a>
-    <a class="<?= ($pageName == 'oop' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/oop/oop.php">
-        <img class="nav-image" src="../../../assets/images/lesson.png"> OOP
+    <a class="<?= ($currentPageName == 'oop' && $currentWorkName == 'lessons') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/lessons/oop/oop.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/lesson.png' ?>"> OOP
     </a>
 </div>
