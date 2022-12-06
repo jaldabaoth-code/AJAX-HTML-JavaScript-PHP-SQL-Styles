@@ -8,7 +8,6 @@ CREATE TABLE `friend` (
     `lastname` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
 );
-
 LOCK TABLES `friend` WRITE;
 INSERT INTO `friend` VALUES (1,'Ross','Geller'),(2,'Monica','Geller'),(3,'Phoebe','Buffay'),(4,'Joey','Tribbiani');
 UNLOCK TABLES;
@@ -21,3 +20,13 @@ CREATE TABLE `story` (
     `author` varchar(100) NOT NULL,
     PRIMARY KEY (`id`)
 );
+
+DROP TABLE IF EXISTS `recipe`;
+CREATE TABLE `recipe` (
+    `id` integer NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `title` varchar(50) NOT NULL,
+    `description` varchar(255) NOT NULL
+);
+INSERT INTO `recipe` VALUES
+(1, 'A pie tatin', 'You make a pie, you put it in the oven and then tatin.'),
+(2, 'Arsenic pudding', 'In a large bowl of strychnine, dilute some morphine. Heat a good glass of kerosene in a saucepan...');

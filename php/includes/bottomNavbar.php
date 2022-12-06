@@ -57,6 +57,15 @@
     <a class="<?= ($pageName == 'pdo' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/pdo/pdo.php">
         <img class="nav-image" src="../../../assets/images/workshop.png"> PDO
     </a>
+    <a class="<?= ($pageName == 'mvc1' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/mvc1/index.php">
+        <img class="nav-image" src="../../../assets/images/workshop.png"> MVC 1
+    </a>
+    <a class="<?= ($pageName == 'mvc2' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/mvc2/public/index.php">
+        <img class="nav-image" src="../../../assets/images/workshop.png"> MVC 2
+    </a>
+    <a class="<?= ($pageName == 'mvc3' && $workName == 'workshops') ? 'active' : '' ?>" href="../../../php/workshops/mvc3/public/index.php">
+        <img class="nav-image" src="../../../assets/images/workshop.png"> MVC 3
+    </a>
     <a class="<?= ($pageName == 'form' && $workName == 'lessons') ? 'active' : '' ?>" href="../../../php/lessons/form/form.php">
         <img class="nav-image" src="../../../assets/images/lesson.png"> Form
     </a>
