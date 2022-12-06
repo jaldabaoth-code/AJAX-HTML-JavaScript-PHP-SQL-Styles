@@ -64,4 +64,7 @@
     <a class="<?= ($currentPageName == 'oop' && $currentWorkName == 'lessons') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/lessons/oop/oop.php' ?>">
         <img class="nav-image" src="<?= $changeDirectory . 'assets/images/lesson.png' ?>"> OOP
     </a>
+    <a class="<?= ($currentPageName == 'pdo' && $currentWorkName == 'lessons') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/lessons/pdo/index.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/lesson.png' ?>"> PDO
+    </a>
 </div>

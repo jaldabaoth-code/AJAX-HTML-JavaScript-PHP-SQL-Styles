@@ -4,19 +4,23 @@ require __DIR__.'/controllers/RecipeController.php';
 
 $urlPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-if ('/' === $urlPath) {
+$url = '';
+$urlArray = explode('/', $urlPath);
+$url = $urlArray[5];
+
+if ('' === $url || 'index.php' === $url) {
     $recipeController = new RecipeController();
     $recipeController->browseRecipes();
-} elseif ('/show' === $urlPath && isset($_GET['id'])) {
+} elseif ('show' === $url && isset($_GET['id'])) {
     $recipeController = new RecipeController();
     $recipeController->showRecipe($_GET['id']);
-} elseif ('/add' === $urlPath) {
+} elseif ('add' === $url) {
     $recipeController = new RecipeController();
     $recipeController->addRecipe();
-} elseif ('/edit'  === $urlPath && isset($_GET['id'])) {
+} elseif ('edit'  === $url && isset($_GET['id'])) {
     $recipeController = new RecipeController();
     $recipeController->editRecipe($_GET['id']);
-} elseif ('/delete' === $urlPath) {
+} elseif ('delete' === $url) {
     $recipeController = new RecipeController();
     $recipeController->deleteRecipe();
 } else {

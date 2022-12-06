@@ -30,3 +30,20 @@ CREATE TABLE `recipe` (
 INSERT INTO `recipe` VALUES
 (1, 'A pie tatin', 'You make a pie, you put it in the oven and then tatin.'),
 (2, 'Arsenic pudding', 'In a large bowl of strychnine, dilute some morphine. Heat a good glass of kerosene in a saucepan...');
+
+
+DROP TABLE IF EXISTS `animal`;
+CREATE TABLE `animal` (
+    `id` int NOT NULL AUTO_INCREMENT,
+    `name` varchar(100),
+    `image` varchar(255),
+    `weight` FLOAT,
+    PRIMARY KEY (`id`)
+);
+INSERT INTO `animal` VALUES
+(1, 'Cat', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Black_Cat_%287983739954%29.jpg/1280px-Black_Cat_%287983739954%29.jpg', '5'),
+(2, 'Red fox', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg/1280px-Fox_-_British_Wildlife_Centre_%2817429406401%29.jpg', '10'),
+(3, 'Eurasian wolf', 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Alba-European-Wolf.jpg', '50'),
+(4, 'Lion', 'https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg', '130'),
+(5, 'Asian elephant', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Elephas_maximus_%28Bandipur%29.jpg/1280px-Elephas_maximus_%28Bandipur%29.jpg', '4000'),
+(6, 'Blue whale', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/1280px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg', '130000');

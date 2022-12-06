@@ -1,13 +1,20 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <?php
+            /* Head included */
+            include '../../../../includes/head.html';
+        ?>
         <title>List of Recipes</title>
     </head>
+    <?php
+        /* Navbar included */
+        include '../../../../includes/navbar.php';
+        include '../../../includes/bottomNavbar.php';
+    ?>
     <body>
     <img src="http://localhost:8000/delete?id=8" alt="fake image">
-        <a href="/add">Add</a>
+        <a href="add">Add</a>
         <h1>List of Recipes</h1>
         <ul>
             <?php foreach ($recipes as $recipe) : ?>

@@ -3,14 +3,14 @@
     <head>
         <?php
             /* Head included */
-            include '../../../includes/head.html';
+            include '../../../../includes/head.html';
         ?>
         <title><?= $recipe['title'] ?></title>
     </head>
     <?php
         /* Navbar included */
-        include '../../../includes/navbar.php';
-        include '../../includes/bottomNavbar.php';
+        include '../../../../includes/navbar.php';
+        include '../../../includes/bottomNavbar.php';
     ?>
     <body>
         <a href="/">Home</a>
