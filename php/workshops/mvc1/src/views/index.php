@@ -5,7 +5,8 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title>List of Recipes</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <title>PHP MVC 1</title>
     </head>
     <?php
         /* Navbar included */
@@ -13,16 +14,16 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <a href="add.php">Add</a>
-        <h1>List of Recipes</h1>
-        <ul>
-            <?php foreach ($recipes as $recipe) : ?>
-            <li>
+        <h1>PHP MVC 1 - Workshop</h1>
+        <h2>List of Recipes</h2>
+        <?php foreach ($recipes as $recipe) : ?>
+            <p>
                 <a href="show.php?id=<?= $recipe['id'] ?>">
                     <?= $recipe['title'] ?>
                 </a>
-            </li>
-            <?php endforeach ?>
-        </ul>
+            </p>
+        <?php endforeach ?>
+        <hr>
+        <h3><a class="add" href="add.php">Add new recipe</a></h3>
     </body>
 </html>

@@ -16,7 +16,7 @@
         }
         if (empty($errors)) {
             saveRecipe($recipe);
-            header('Location: /');
+            header('Location: index.php');
         }
     }
     require __DIR__ . '/src/views/form.php';

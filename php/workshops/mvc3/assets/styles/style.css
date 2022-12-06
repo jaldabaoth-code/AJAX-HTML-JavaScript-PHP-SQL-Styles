@@ -1,0 +1,57 @@
+.add {
+    background-color: #4aaebc;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #1453d1;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.edit {
+    display: flex;
+
+    justify-content: center;
+    width: 275px;
+    background-color: #4a4abc;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: #2265eb;
+    color: white;
+}
+
+
+.delete {
+    background-color: #750505;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #c70909;
+    color: white;
+}
+
+.formDelete {
+    display: flex;
+    align-items:stretch;
+    width: 275px;
+}
+.toto {
+    display: flex;
+}

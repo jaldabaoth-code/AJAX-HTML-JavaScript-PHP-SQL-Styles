@@ -14,7 +14,6 @@ class RecipeController
     {
         // Fetching all recipes
         $recipes = $this->recipeModel->getAll();
-
         // Generate the web page
         require __DIR__ . '/../views/index.php';
     }
@@ -27,16 +26,13 @@ class RecipeController
             header("Location: /");
             exit("Wrong input parameter");
         }
-
         // Fetching a recipe
         $recipe = $this->recipeModel->getById($id);
-
         // Result check
         if (!isset($recipe['title']) || !isset($recipe['description'])) {
-            header("Location: /");
+            header("Location: index.php");
             exit("Recipe not found");
         }
-
         // Generate the web page
         require __DIR__ . '/../views/show.php';
     }
@@ -44,7 +40,6 @@ class RecipeController
     public function addRecipe(): void
     {
         $errors = [];
-
         if ($_SERVER["REQUEST_METHOD"] === 'POST') {
             $recipe = array_map('trim', $_POST);
 
@@ -54,10 +49,9 @@ class RecipeController
             // Save the recipe
             if (empty($errors)) {
                 $this->recipeModel->saveRecipe($recipe);
-                header('Location: /');
+                header('Location: index.php');
             }
         }
-
         // Generate the web page
         require __DIR__ . '/../views/form.php';
     }
@@ -65,10 +59,8 @@ class RecipeController
     public function editRecipe(int $id)
     {
         $errors = [];
-
         // recuperer les info correspond à la recette $id
         $recipe = $this->recipeModel->getById($id);
-
         if ($_SERVER["REQUEST_METHOD"] === 'POST') {
             $recipe = array_map('trim', $_POST);
             $recipe['id'] = $id;
@@ -78,7 +70,7 @@ class RecipeController
             // Save the recipe
             if (empty($errors)) {
                 $this->recipeModel->updateRecipe($recipe);
-                header('Location: /');
+                header('Location: index.php');
             }
         }
         // Generate the web page
@@ -89,7 +81,7 @@ class RecipeController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $this->recipeModel->removeRecipe(trim($_POST['id']));
-            header('Location: /');
+            header('Location: index.php');
         }
     }
 
@@ -104,7 +96,6 @@ class RecipeController
         if (!empty($recipe['title']) && strlen($recipe['title']) > 255) {
             $errors[] = 'The title should be less than 255 characters';
         }
-
         return $errors ?? [];
     }
 }

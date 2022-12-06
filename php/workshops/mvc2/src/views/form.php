@@ -13,23 +13,25 @@
         include '../../../includes/bottomNavbar.php';
     ?>
     <body>
-        <a href="/">Home</a>
-        <h1>Add Your Recipe</h1>
-
-        <?php foreach ($errors as $error) : ?>
-            <p><?= $error ?></p>
-        <?php endforeach; ?>
-
-        <form action="" method="post">
-            <div>
-                <label for="title">Title</label>
-                <input id="title" name="title" type="text" value="<?= $recipe['title'] ?? '' ?>">
-            </div>
-            <div>
-                <label for="description">Description</label>
-                <textarea id="description" name="description"><?= $recipe['description'] ?? '' ?></textarea>
-            </div>
-            <button>Send</button>
-        </form>
+        <h1>PHP MVC 2 - Workshop</h1>
+        <h2>Recipe Form</h2>
+        <div class="form">
+            <form action="" method="POST">
+                <ul class="error">
+                    <?php foreach ($errors as $error) : ?>
+                        <li><?= $error ?></li>
+                    <?php endforeach; ?>
+                </ul>
+                <div>
+                    <label for="title">Title :</label>
+                    <input id="title" name="title" type="text" value="<?= $recipe['title'] ?? '' ?>">
+                </div>
+                <div>
+                    <label for="description">Description :</label>
+                    <textarea id="description" name="description"><?= $recipe['description'] ?? '' ?></textarea>
+                </div>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </div>
     </body>
 </html>

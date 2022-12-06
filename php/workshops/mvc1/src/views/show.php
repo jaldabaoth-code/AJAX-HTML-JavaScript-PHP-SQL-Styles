@@ -5,7 +5,7 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title><?= $recipe['title'] ?></title>
+        <title>PHP MVC 1</title>
     </head>
     <?php
         /* Navbar included */
@@ -13,11 +13,10 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <a href="/">Home</a>
-        <h1><?= $recipe['title'] ?></h1>
-
-        <div>
+        <h1>PHP MVC 1 - Workshop</h1>
+        <h2><?= $recipe['title'] ?></h2>
+        <p>
             <?= $recipe['description'] ?>
-        </div>
+        </p>
     </body>
 </html>

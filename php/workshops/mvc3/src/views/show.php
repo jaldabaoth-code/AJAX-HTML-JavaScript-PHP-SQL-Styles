@@ -5,7 +5,8 @@
             /* Head included */
             include '../../../../includes/head.html';
         ?>
-        <title><?= $recipe['title'] ?></title>
+        <link rel="stylesheet" href="../assets/styles/style.css">
+        <title>PHP MVC 3</title>
     </head>
     <?php
         /* Navbar included */
@@ -13,16 +14,17 @@
         include '../../../includes/bottomNavbar.php';
     ?>
     <body>
-        <a href="/">Home</a>
-        <h1><?= $recipe['title'] ?></h1>
-        <a href="edit?id=<?= $recipe['id'] ?>">Edit</a>
-        <form action="delete" method="POST">
-            <input type="hidden" value="<?= $recipe['id'] ?>" name="id">
-            <button>Remove</button>
-        </form>
-        <a href="delete?id=<?= $recipe['id'] ?>">Remove</a>
-        <div>
+        <h1>PHP MVC 3 - Workshop</h1>
+        <h2><?= $recipe['title'] ?></h2>
+        <p>
             <?= $recipe['description'] ?>
+        </p>
+        <div class="toto">
+            <a class="edit" href="edit?id=<?= $recipe['id'] ?>">Edit</a>
+            <form action="delete" class="formDelete" method="POST">
+                <input type="hidden" value="<?= $recipe['id'] ?>" name="id">
+                <button class="delete">Remove</button>
+            </form>
         </div>
     </body>
 </html>
