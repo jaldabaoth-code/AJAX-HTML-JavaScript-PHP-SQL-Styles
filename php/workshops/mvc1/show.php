@@ -1,6 +1,6 @@
 <?php
     require_once '../../../.env.php'; 
-    require __DIR__ . '/src/models/recipe-model.php';
+    require __DIR__ . '/src/models/RecipeModel.php';
     // Input GET parameter validation (integer > 0)
     $id = filter_var($_GET['id'], FILTER_VALIDATE_INT, ["options" => ["min_range" => 1]]);
     if (false === $id || null === $id) {

@@ -1,5 +1,6 @@
 <?php
     require __DIR__ . '/../models/RecipeModel.php';
+
     class RecipeController
     {
         private RecipeModel $recipeModel;
@@ -19,7 +20,7 @@
 
         public function showRecipe(int $id): void
         {
-            // Input parameter validation (integer >0)
+            // Input parameter validation (integer > 0)
             $id = filter_var($id, FILTER_VALIDATE_INT, ["options" => ["min_range" => 1]]);
             if (false === $id || null === $id) {
                 header("Location: index.php");

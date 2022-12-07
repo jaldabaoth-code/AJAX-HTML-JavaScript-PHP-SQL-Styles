@@ -16,7 +16,8 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title>Animal</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <title>PHP PDO</title>
     </head>
     <?php
         /* Navbar included */
@@ -24,8 +25,11 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1><?= $animal['name'] ?></h1>
-        <img src="<?= $animal['image'] ?>" alt="picture of <?= $animal['name'] ?>">
-        <p>Weight :<?= $animal['weight'] ?></p>
+        <h1>PHP PDO - Lesson</h1>
+        <h2>Animal</h2>
+        <div class="animal">
+            <p><?= $animal['name'] ?> - <?= $animal['weight'] ?> kg</p>
+            <img src="<?= $animal['image'] ?>" alt="picture of <?= $animal['name'] ?>">
+        </div>
     </body>
 </html>

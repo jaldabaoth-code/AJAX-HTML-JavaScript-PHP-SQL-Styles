@@ -1,6 +1,6 @@
 <?php
     require_once '../../../.env.php'; 
-    require_once __DIR__ . '/src/models/recipe-model.php';
+    require_once __DIR__ . '/src/models/RecipeModel.php';
     if ($_SERVER["REQUEST_METHOD"] === 'POST') {
         $recipe = array_map('trim', $_POST);
         $errors = [];

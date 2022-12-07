@@ -1,6 +1,6 @@
 <?php
     require_once '../../../.env.php';
-    require __DIR__ . '/src/models/recipe-model.php';
+    require __DIR__ . '/src/models/RecipeModel.php';
     // Fetching all recipes
     $recipes = getAllRecipes();
     // Generate the web page

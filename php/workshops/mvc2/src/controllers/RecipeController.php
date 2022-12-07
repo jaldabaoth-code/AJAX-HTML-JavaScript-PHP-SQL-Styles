@@ -1,5 +1,6 @@
 <?php
-    require __DIR__ . '/../models/recipe-model.php';
+    require __DIR__ . '/../models/RecipeModel.php';
+
     function browseRecipes(): void
     {
         // Fetching all recipes
