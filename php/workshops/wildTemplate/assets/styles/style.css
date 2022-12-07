@@ -1,8 +1,8 @@
 :root {
-    --mainColor:#f16b6c;
-    --secondaryColor:#ffd64f;
-    --darkColor:#262626;
-    --lightColor:#F0F2F4;
+    --mainColor: #f16b6c;
+    --secondaryColor: #ffd64f;
+    --darkColor: #262626;
+    --lightColor: #F0F2F4;
 }
 
 html, body {

@@ -3,18 +3,18 @@
 }
 
 .navbar.navbar-expand-lg .navbar-brand {
-    color: #EDEDED;
+    color: #ededed;
     font-size: 50px;
 }
 
 .navbar.navbar-expand-lg .nav-link {
-    color: #EDEDED;
+    color: #ededed;
     font-size: 30px;
 }
 
 .navbar.navbar-expand-lg .nav-link:hover {
-    color: #EDEDED;
-    text-decoration: underline #EDEDED;
+    color: #ededed;
+    text-decoration: underline #ededed;
 }
 
 .orange-ring {
@@ -36,12 +36,12 @@ footer {
 }
 
 .footer-text {
-    color: #EDEDED;
+    color: #ededed;
     text-decoration: none;
 }
 
 .footer-text:hover {
-    color: #EDEDED;
+    color: #ededed;
     text-decoration: none;
 }
 

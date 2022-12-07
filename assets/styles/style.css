@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(205, 198, 198);
+    background-color: #cdc6bb;
 }
 
 h1, h2, h3 {
@@ -47,9 +47,9 @@ select {
 .button {
     margin-top: 5px;
     margin-bottom: 100px;
-    background-color: black;
-    border: 1px black;
-    color: white;
+    background-color: #212529;
+    border: 1px #212529;
+    color: #f8f9fa;
     cursor: pointer;
     height: 50px;
     width: 500px;
