@@ -16,7 +16,7 @@
         <p class="work-title"><img class="work-image" src="assets/images/workshop.png" alt="workshop image"> Workshops</p>
         <p class="work-title"><img class="work-image" src="assets/images/lesson.png" alt="lesson image"> Lessons</p>
         <hr>
-        <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS">The link to (GitHub)</a>
+        <a href="https://github.com/jaldabaoth-code/AJAX-HTML-JavaScript-PHP-SQL-Styles">The link to (GitHub)</a>
         <br>
         <a href="https://odyssey.wildcodeschool.com">The link to (Odyssey - Wildcodeschool)</a>
     </body>
