@@ -28,15 +28,15 @@
 
 4. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/html/quests/form">HTML Quest - Form</a>
 
-5. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javascript">JavaScript</a>
+5. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javaScript">JavaScript</a>
 
-6. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javascript/quests/calculator">JavaScript Quest - Calculator</a>
+6. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javaScript/quests/calculator">JavaScript Quest - Calculator</a>
 
-7. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javascript/quests/createElement">JavaScript Quest - Create Element</a>
+7. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javaScript/quests/createElement">JavaScript Quest - Create Element</a>
 
-8. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javascript/quests/guessNumber">JavaScript Quest - Guess A Number</a>
+8. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javaScript/quests/guessNumber">JavaScript Quest - Guess A Number</a>
 
-9. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javascript/quests/hoverMe">JavaScript Quest - Hover Me</a>
+9. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/javaScript/quests/hoverMe">JavaScript Quest - Hover Me</a>
 
 10. <a href="https://github.com/jaldabaoth-code/PHP-HTML-SCSS-CSS-JS/tree/main/php">PHP</a>
 
