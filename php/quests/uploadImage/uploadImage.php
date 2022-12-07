@@ -161,7 +161,7 @@
                     <input type="text" id="hair" name="hair" placeholder="Hair" value="<?= $data['hair'] ?? '' ?>" required>
                 </div>
                 <div>
-                    <label for="imageUpload">Upload profile picture : </label>    
+                    <label for="imageUpload">Upload profile picture :</label>    
                     <input type="file" name="files[]" id="imageUpload" multiple>
                 </div>
                 <button type="submit" class="button">Send</button>

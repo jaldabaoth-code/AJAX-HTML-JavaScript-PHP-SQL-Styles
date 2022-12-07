@@ -26,6 +26,6 @@
     <body>
         <h1><?= $animal['name'] ?></h1>
         <img src="<?= $animal['image'] ?>" alt="picture of <?= $animal['name'] ?>">
-        <p>Weight: <?= $animal['weight'] ?></p>
+        <p>Weight :<?= $animal['weight'] ?></p>
     </body>
 </html>

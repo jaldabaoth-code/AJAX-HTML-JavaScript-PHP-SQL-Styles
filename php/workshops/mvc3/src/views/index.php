@@ -6,7 +6,7 @@
             include '../../../../includes/head.html';
         ?>
         <link rel="stylesheet" href="../assets/styles/style.css">
-        <title>PHP MVC 2</title>
+        <title>PHP MVC 3</title>
     </head>
     <?php
         /* Navbar included */

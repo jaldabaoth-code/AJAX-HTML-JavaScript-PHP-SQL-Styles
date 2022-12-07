@@ -1,3 +1,7 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+}
 .add, .edit, .delete {
     color: #f8f9fa;
     padding: 10px 32px;
@@ -21,11 +25,6 @@
 
 .add:hover {
     background-color: #157347;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
 }
 
 .edit {
