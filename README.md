@@ -1,14 +1,14 @@
-<h1>PHP-HTML-SCSS-CSS-JS (Mini Projects/Quests, WCS Web PHP)</h1>
+<h1>AJAX/HTML/JavaScript/PHP/SQL/Styles (Mini Projects/Quests, WCS Web PHP)</h1>
 
-### There are PHP/HTML/CSS/SCSS/JS "Quests" and "Workshops" we did during WCS Web PHP
+### There are AJAX/HTML/JavaScript/PHP/SQL/Styles(CSS/SCSS/Bootstrap) "Quests", "Workshops" and "Lessons" we did during WCS Web PHP
 
 
 ---
 
 ### Steps
 
-0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/PHP-HTML-SCSS-CSS-JS.git`
-1. Enter the directory : `cd PHP-HTML-SCSS-CSS-JS`
+0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/AJAX-HTML-JavaScript-PHP-SQL-Styles.git`
+1. Enter the directory : `cd AJAX-HTML-JavaScript-PHP-SQL-Styles`
 2. Create an <b>.env.php</b> file from <b>.env.php.model</b> file and add your DB parameters<br/>
     This one is not committed to the shared repository<br/>
     Don't delete the <b>.env.php.model</b> file, it must be kept
