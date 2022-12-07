@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `php_html_scss_css_js`;
-USE `php_html_scss_css_js`;
+CREATE DATABASE IF NOT EXISTS `ajax_html_javascript_php_sql_styles`;
+USE `ajax_html_javascript_php_sql_styles`;
 
 /* Quests PDO */
 DROP TABLE IF EXISTS `friend`;
