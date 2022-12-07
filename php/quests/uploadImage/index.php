@@ -116,7 +116,7 @@
         <div class="form">
             <h1>PHP Upload Image - Quest</h1>
             <h2>Upload Image</h2>
-            <form action="uploadImage.php" method="POST" enctype="multipart/form-data" novalidate>
+            <form action="index.php" method="POST" enctype="multipart/form-data" novalidate>
                 <!-- Show errors -->
                 <?php if (!empty($errors)) : ?>
                     <ul class="error">

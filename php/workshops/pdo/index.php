@@ -19,7 +19,7 @@
             $errors[] = 'The firstname must be less than ' . $authorLength . ' characters';
         }
         if (empty($errors)) {
-            header('Location: pdo.php');
+            header('Location: index.php');
             $query = "INSERT INTO story (title, author, content) VALUES (:title, :author, :content)";
             $statement = $pdo->prepare($query);
             $statement->bindValue(':title', $data['title'], \PDO::PARAM_STR);

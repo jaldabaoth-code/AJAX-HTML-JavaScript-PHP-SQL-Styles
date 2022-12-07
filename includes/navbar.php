@@ -12,8 +12,10 @@
     // Change directory for to access the desired file
     if ($currentPageName == 'mvc2' || $currentPageName == 'mvc3') {
         $changeDirectory = "../../../../";
+        $changeDirectoryHome = "../../../";
     } else {
         $changeDirectory = "../../../";
+        $changeDirectoryHome = "../../";
     }
 ?>
 <div class="top-nav">

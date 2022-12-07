@@ -30,7 +30,7 @@
             // I process my form
             // Save in DB
             // Or send an email...
-            header('Location: form.php');
+            header('Location: index.php');
         }
     }
 ?>

@@ -60,7 +60,7 @@
         <h1>PHP Form - Quest</h1>
         <h2>Form</h2>
         <div class="form">
-            <form action="form.php" method="POST" novalidate>
+            <form action="index.php" method="POST" novalidate>
                 <?php if (!empty($errors)) : ?>
                     <ul class="error">
                         <?php foreach ($errors as $error) : ?>

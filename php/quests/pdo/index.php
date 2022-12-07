@@ -20,7 +20,7 @@
             $errors[] = 'The firstname must be less than ' . $firstnameLength . ' characters';
         }
         if (empty($errors)) {
-            header('Location: pdo.php');
+            header('Location: index.php');
             $firstname = trim($_POST['firstname']);
             $lastname = trim($_POST['lastname']);
             $query = "INSERT INTO friend (firstname, lastname) VALUES (:firstname, :lastname)";
