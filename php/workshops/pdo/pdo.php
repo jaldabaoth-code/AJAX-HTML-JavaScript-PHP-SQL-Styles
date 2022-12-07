@@ -66,7 +66,7 @@
         <h2>PDO</h2>
         <h3>Kaamelott Story</h3>
         <div class="form">
-            <form action="" method="POST" class="login" novalidate>
+            <form action="" method="POST" novalidate>
                 <?php if (!empty($errors)) : ?>
                     <ul class="error">
                         <?php foreach ($errors as $error) : ?>

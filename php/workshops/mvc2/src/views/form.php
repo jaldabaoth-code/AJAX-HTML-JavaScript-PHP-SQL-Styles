@@ -5,7 +5,7 @@
             /* Head included */
             include '../../../../includes/head.html';
         ?>
-        <title>Add Your Recipe</title>
+        <title>PHP MVC 2</title>
     </head>
     <?php
         /* Navbar included */

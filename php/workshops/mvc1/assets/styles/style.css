@@ -1,17 +1,25 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .add {
-    background-color: #4aaebc;
-    color: white;
+    color: #f8f9fa;
     padding: 10px 32px;
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    width: 275px;
+    justify-content: center;
+    background-color: #198754;
 }
 
 .add:hover {
-    background-color: #1453d1;
-    color: white;
+    color: #f8f9fa;
+    background-color: #157347;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #212529;
 }

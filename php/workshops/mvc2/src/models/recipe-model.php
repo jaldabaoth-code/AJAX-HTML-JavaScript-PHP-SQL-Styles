@@ -15,7 +15,7 @@
     function getRecipeById(int $id): array
     {
         $connect = createConnect();
-        $query = 'SELECT title, description FROM recipe WHERE id=:id';
+        $query = 'SELECT title, description FROM recipe WHERE id = :id';
         $statement = $connect->prepare($query);
         $statement->bindValue(':id', $id, PDO::PARAM_INT);
         $statement->execute();

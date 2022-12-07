@@ -13,14 +13,14 @@
         // Input parameter validation (integer >0)
         $id = filter_var($id, FILTER_VALIDATE_INT, ["options" => ["min_range" => 1]]);
         if (false === $id || null === $id) {
-            header("Location: /");
+            header("Location: index.php");
             exit("Wrong input parameter");
         }
         // Fetching a recipe
         $recipe = getRecipeById($id);
         // Result check
         if (!isset($recipe['title']) || !isset($recipe['description'])) {
-            header("Location: /");
+            header("Location: index.php");
             exit("Recipe not found");
         }
         // Generate the web page
@@ -37,7 +37,7 @@
             // Save the recipe
             if (empty($errors)) {
                 saveRecipe($recipe);
-                header('Location: /');
+                header('Location: index.php');
             }
         }
         // Generate the web page

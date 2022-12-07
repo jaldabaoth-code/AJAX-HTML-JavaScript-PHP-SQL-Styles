@@ -24,6 +24,8 @@
             </p>
         <?php endforeach ?>
         <hr>
-        <h3><a class="add" href="add">Add new recipe</a></h3>
+        <div class="buttons">
+            <a class="add" href="add">Add new recipe</a>
+        </div>
     </body>
 </html>

@@ -1,57 +1,57 @@
-.add {
-    background-color: #4aaebc;
-    color: white;
+.add, .edit, .delete {
+    color: #f8f9fa;
     padding: 10px 32px;
     text-decoration: none;
     cursor: pointer;
 }
 
+.add:hover, .edit:hover, .delete:hover {
+    color: #f8f9fa;
+}
+
+.add, .edit, .formDelete {
+    display: flex;
+    width: 275px;
+}
+
+.add {
+    justify-content: center;
+    background-color: #198754;
+}
+
 .add:hover {
-    background-color: #1453d1;
-    color: white;
+    background-color: #157347;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.edit {
+    justify-content: center;
+    background-color: #0d6efd;
+    margin-right: 20px;
+}
+
+.edit:hover {
+    background-color: #0b5ed7;
+}
+
+.formDelete {
+    align-items: stretch;
+}
+
+.delete {
+    background-color: #dc3545;
+    border: none;
+}
+
+.delete:hover {
+    background-color: #bb2d3b;
 }
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-.edit {
-    display: flex;
-
-    justify-content: center;
-    width: 275px;
-    background-color: #4a4abc;
-    color: white;
-    padding: 10px 32px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.edit:hover {
-    background-color: #2265eb;
-    color: white;
-}
-
-
-.delete {
-    background-color: #750505;
-    color: white;
-    padding: 10px 32px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.delete:hover {
-    background-color: #c70909;
-    color: white;
-}
-
-.formDelete {
-    display: flex;
-    align-items:stretch;
-    width: 275px;
-}
-.toto {
-    display: flex;
+    color: #212529;
 }

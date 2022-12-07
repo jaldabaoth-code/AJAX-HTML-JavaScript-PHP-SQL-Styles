@@ -3,7 +3,7 @@
     $pdo = new \PDO(DSN, USER, PASS);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $id = $_GET['id'];
-    $query = "SELECT * FROM animal WHERE id=:id";
+    $query = "SELECT * FROM animal WHERE id = :id";
     $statement = $pdo->prepare($query);
     $statement->bindValue(':id', $id);
     $statement->execute();

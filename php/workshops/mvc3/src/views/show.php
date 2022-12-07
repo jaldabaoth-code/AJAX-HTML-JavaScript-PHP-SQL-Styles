@@ -19,7 +19,8 @@
         <p>
             <?= $recipe['description'] ?>
         </p>
-        <div class="toto">
+        <hr>
+        <div class="buttons">
             <a class="edit" href="edit?id=<?= $recipe['id'] ?>">Edit</a>
             <form action="delete" class="formDelete" method="POST">
                 <input type="hidden" value="<?= $recipe['id'] ?>" name="id">

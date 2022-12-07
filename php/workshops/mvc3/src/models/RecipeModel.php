@@ -17,7 +17,7 @@
 
         public function getById(int $id): array
         {
-            $query = 'SELECT id, title, description FROM recipe WHERE id=:id';
+            $query = 'SELECT id, title, description FROM recipe WHERE id = :id';
             $statement = $this->connection->prepare($query);
             $statement->bindValue(':id', $id, PDO::PARAM_INT);
             $statement->execute();
@@ -36,7 +36,7 @@
 
         public function updateRecipe(array $recipe): void
         {
-            $query = 'UPDATE recipe SET title=:title, description=:description WHERE id=:id';
+            $query = 'UPDATE recipe SET title = :title, description = :description WHERE id = :id';
             $statement = $this->connection->prepare($query);
             $statement->bindValue(':title', $recipe['title'], PDO::PARAM_STR);
             $statement->bindValue(':description', $recipe['description'], PDO::PARAM_STR);
@@ -46,7 +46,7 @@
 
         public function removeRecipe(int $id) 
         {
-            $query = 'DELETE FROM recipe WHERE id=:id';
+            $query = 'DELETE FROM recipe WHERE id = :id';
             $statement = $this->connection->prepare($query);
             $statement->bindValue(':id', $id, PDO::PARAM_INT);
             $statement->execute();
