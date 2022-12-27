@@ -13,6 +13,6 @@
         include 'includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>AJAX quests, workshops and lessons</h1>
+        <h1>AJAX quests, workshops, lessons and tutorials</h1>
     </body>
 </html>

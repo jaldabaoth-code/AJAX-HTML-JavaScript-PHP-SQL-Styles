@@ -13,4 +13,7 @@
     <a class="<?= ($currentPageName == 'guessNumber') ? 'active' : '' ?>" href="<?= $changeDirectory . 'javaScript/quests/guessNumber/index.php' ?>">
         <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Guess A Number
     </a>
+    <a class="<?= ($currentPageName == 'resizeObserver') ? 'active' : '' ?>" href="<?= $changeDirectory . 'javaScript/tutorials/resizeObserver/index.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/tutorial.png' ?>"> Resize Observer
+    </a>
 </div>

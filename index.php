@@ -11,7 +11,7 @@
         include 'includes/navbar.php';
     ?>
     <body>
-        <h1>This project contains different quests, workshops and lessons</h1>
+        <h1>This project contains different quests, workshops, lessons and tutorials</h1>
         <p class="work-title"><img class="work-image" src="assets/images/quest.png" alt="quest image"> Quests</p>
         <p class="work-title"><img class="work-image" src="assets/images/workshop.png" alt="workshop image"> Workshops</p>
         <p class="work-title"><img class="work-image" src="assets/images/lesson.png" alt="lesson image"> Lessons</p>

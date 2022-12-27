@@ -1,16 +1,11 @@
-.box{
-    background-color:red;
-    width: 500px;
-    height: 500px;
-}
-
 .container {
     display: flex;
+    justify-content: center;
+    width: 40%;
 }
 
-@media screen and (max-width: 400px) {
-    .box {
-        background-color: blue;
-    }
-    
+.box {
+    background-color:red;
+    width: 200px;
+    height: 200px;
 }

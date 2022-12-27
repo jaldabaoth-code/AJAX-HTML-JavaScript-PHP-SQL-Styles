@@ -13,6 +13,6 @@
         include 'includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>PHP quests, workshops and lessons</h1>
+        <h1>PHP quests, workshops, lessons and tutorials</h1>
     </body>
 </html>

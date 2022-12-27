@@ -13,6 +13,6 @@
         include 'includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>SQL quests, workshops and lessons</h1>
+        <h1>SQL quests, workshops, lessons and tutorials</h1>
     </body>
 </html>
