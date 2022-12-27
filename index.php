@@ -15,6 +15,7 @@
         <p class="work-title"><img class="work-image" src="assets/images/quest.png" alt="quest image"> Quests</p>
         <p class="work-title"><img class="work-image" src="assets/images/workshop.png" alt="workshop image"> Workshops</p>
         <p class="work-title"><img class="work-image" src="assets/images/lesson.png" alt="lesson image"> Lessons</p>
+        <p class="work-title"><img class="work-image" src="assets/images/tutorial.png" alt="tutorial image"> Tutorials</p>
         <hr>
         <a href="https://github.com/jaldabaoth-code/AJAX-HTML-JavaScript-PHP-SQL-Styles">The link to (GitHub)</a>
         <br>
