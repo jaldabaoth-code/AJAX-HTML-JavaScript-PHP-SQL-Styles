@@ -13,8 +13,6 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>PHP Information - Quest</h1>
-        <h2>Information</h2>
         <?php
             // Display all information, as would INFO_ALL
             phpinfo();
