@@ -1,5 +1,6 @@
 body {
     background-color: #cdc6bb;
+    font-family: system-ui;
 }
 
 h1, h2, h3 {
@@ -8,6 +9,20 @@ h1, h2, h3 {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+h2 {
+    font-size: calc(1.325rem + .9vw) !important;
+}
+
+h3 {
+    font-size: calc(1.3rem + .6vw) !important;
 }
 
 .form {
