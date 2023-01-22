@@ -25,6 +25,9 @@
     <a class="<?= ($currentPageName == 'oop' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/oop/index.php' ?>">
         <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> OOP
     </a>
+    <a class="<?= ($currentPageName == 'variable' && $currentWorkName == 'quests') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/variable/index.php' ?>">
+        <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Variable
+    </a>
     <a class="<?= ($currentPageName == 'uploadImage') ? 'active' : '' ?>" href="<?= $changeDirectory . 'php/quests/uploadImage/index.php' ?>">
         <img class="nav-image" src="<?= $changeDirectory . 'assets/images/quest.png' ?>"> Upload Image
     </a>
