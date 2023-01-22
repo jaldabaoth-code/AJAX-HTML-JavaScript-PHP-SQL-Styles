@@ -5,7 +5,7 @@
             /* Head included */
             include '../../../includes/head.html';
         ?>
-        <title>JavaScript Introduction</title>
+        <title>JavaScript Introduction 5</title>
     </head>
     <?php
         /* Navbar included */
@@ -13,8 +13,8 @@
         include '../../includes/bottomNavbar.php';
     ?>
     <body>
-        <h1>JavaScript Introduction - Quest</h1>
-        <h2 class="title">Introduction</h2>
+        <h1>JavaScript Introduction 5 - Quest</h1>
+        <h2 class="title">Introduction 5</h2>
         <script src="assets/js/index.js"></script>
     </body>
 </html>
