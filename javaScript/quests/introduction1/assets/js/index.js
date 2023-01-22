@@ -22,8 +22,8 @@ const person = {
 	name: "Bob", 
 	age: 30,
 	sayHello: function() {
-		console.log("Hello " + this.name);
+		console.log("Hello " + this.name); // => Hello Bob
 	}
 }
-console.log(person);
-person.sayHello();
+console.log(person); // => {name: 'Bob', age: 30, sayHello: ƒ}
+person.sayHello(); // => Hello Bob
